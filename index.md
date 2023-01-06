@@ -1,11 +1,11 @@
 ---
 layout: splash
-title: "Introduction to Data Mining"
+title: "Advanced Data Analysis: Networks"
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/startrek.jpg
-  caption: "The Library Computer Access/Retrieval System (LCARS), a fictional operating system and data analysis interface from Star Trek: The Next Generation"
+  overlay_image: /assets/images/sixdegrees_banner.png
+  caption: "A shared network from the Six Degrees of Francis Bacon project."
   actions:
     - label: "Schedule & Readings"
       url: "/schedule/"
@@ -17,19 +17,17 @@ header:
       url: "/policies/"
     - label: "Sakai"
       url: "https://sakai.washjeff.edu"
-excerpt: "CIS 241. Washington & Jefferson College. Spring 2023."
+excerpt: "CIS 397. Washington & Jefferson College. Spring 2023."
 ---
 
-**Meeting Time: TR 9-10:45am**
+**Meeting Time: TR 12:50-2:35pm**
 
 Dr. Ladd's Student Drop-In Hours: T 11am-12pm & W 1-3pm in TECH 201  
 or email for appointment, <jladd@washjeff.edu>
 
 ## Course Description
 
-From social media to the James Webb telescope, from Shakespeare's plays to the U.S. Census, data is being collected all around us, all the time. How can we make sense of these near-constant streams of information?
-
-This course will attempt to answer this question by introducing the concepts and practices involved in data analysis: data collection and preparation, exploratory analysis, and prediction and classification. Using the programming language Python and other industry-standard tools, we will practice ways of working with data from simple summary statistics to advanced machine learning models. At each step of the way, we'll discuss how to approach data analysis critically and ethically. And we'll explore data sets from a wide range of fields and disciplines, including sociology, ecology, business, film, and history.
+What do your brain's neurons, Google's search algorithm, an ant colony, and the characters on House of the Dragon all have in common? They can all be described with networks. In this project-based course on network analysis, you'll develop the foundational skills of this advanced data analysis topic as you apply network models and techniques to a wide variety of domains and disciplines. You'll also learn to use popular network software and to analyze networks with code. You will extend your programming and modeling skills in this course as you learn the ropes of this special kind of data analysis. 
 
 ## Learning Goals
 
