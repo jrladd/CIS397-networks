@@ -16,17 +16,17 @@ Date|Topics & Slides|Readings|Assignments
 26 Jan.|Introduction to the course|
 31 Jan. & 2 Feb.|Basics: Working with Network Data & The History of Network Analysis|NT Intro, Ch. 1 & 2, NCM Ch. 1
 7 & 9 Feb.|Basics: Network Metrics & Centrality|NCM Ch. 2
-14 & 16 Feb.|Visualization: Static|NT Ch. 4
-21 & 23 Feb.|Visualization: Interactive|
-28 Feb. & 2 Mar.|Community Structure: Strong & Weak Ties, Triadic Closure|NCM Ch. 3
-7 & 9 Mar.|Community Structure: Homophily, The Small World, Community Detection|NCM Ch. 4, Ch. 20
-14 & 16 Mar.|Special Networks: Signed Networks & Structural Balance, Directed Networks|NCM Ch. 5
+14 & 16 Feb.|Visualization: Static & Interactive|NT Ch. 4
+21 & 23 Feb.|Community Structure: Strong & Weak Ties, Triadic Closure|NCM Ch. 3|Viz Assignment Due Tuesday at 9am
+28 Feb. & 2 Mar.|Community Structure: Homophily, The Small World, Community Detection|NCM Ch. 4, Ch. 20
+7 & 9 Mar.|Special Networks: Signed Networks & Structural Balance, Directed Networks & the Web|NCM Ch. 5, Ch. 13
+14 & 16 Mar.|Special Networks: Bipartite/Multipartite Networks
 21 & 23 Mar.|NO CLASS: Spring Break
-28 Mar.|Project 1
-4 & 6 Apr.|Special Networks: Bipartite/Multipartite Networks
-11 & 13 Apr.|Special Networks: Dynamic & Multilayer Networks
+28 & 30 Mar.|Work on Project 1
+4 & 6 Apr.|Special Networks: Dynamic & Multilayer Networks||Project 1 Due Tuesday at 9am
+11 & 13 Apr.|Behavior: Information Cascades & Network Effects|NCM Ch. 16 & 17
 18 & 20 Apr.|Behavior: Diffusion & Epidemics|NCM Ch. 19 & 21
 25 & 27 Apr.|Behavior: Search Algorithms & Citation Analysis|NCM Ch. 14
-2 & 4 May|Behavior: Modeling with Networks
-9 May|Project 2 & Wrap-Up|
-12 May 2-5pm|Panel Presentations|
+2 & 4 May|Behavior: Modeling with Networks|NCM Ch. 18
+9 May|Work on Project 2 & Wrap-Up|
+12 May 2-5pm|Panel Presentations||Project 2 Due at 2pm
