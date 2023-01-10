@@ -14,7 +14,7 @@ sidebar:
 Date|Topics & Slides|Readings|Assignments
 --|---|---|---
 26 Jan.|Introduction to the course|
-31 Jan. & 2 Feb.|Basics: Working with Network Data & The History of Network Analysis|NT Intro, Ch. 1 & 2, NCM Ch. 1
+31 Jan. & 2 Feb.|Basics: Working with Network Data & The History of Network Analysis|NT Intro, Ch. 1 & 2
 7 & 9 Feb.|Basics: Network Metrics & Centrality|NCM Ch. 2
 14 & 16 Feb.|Visualization: Static & Interactive|NT Ch. 4
 21 & 23 Feb.|Community Structure: Strong & Weak Ties, Triadic Closure|NCM Ch. 3|Viz Assignment Due Tuesday at 9am
