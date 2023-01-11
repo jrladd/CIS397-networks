@@ -27,6 +27,8 @@ or email for appointment, <jladd@washjeff.edu>
 
 ## Course Description
 
+[Only Connect!](https://en.wikiquote.org/wiki/E._M._Forster#Howards_End_(1910))
+
 What do your brain's neurons, Google's search algorithm, an ant colony, and the characters on *House of the Dragon* all have in common? They can all be described with networks. In this project-based course on network analysis, you'll develop the foundational skills of this advanced data analysis topic as you apply network models and techniques to a wide variety of domains and disciplines. You'll also learn to use popular network software and to analyze networks with code. You will extend your programming and modeling skills in this course as you learn the ropes of this special kind of data analysis. 
 
 ## Learning Goals
