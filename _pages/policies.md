@@ -8,13 +8,13 @@ toc: true
 
 ### Preparation and Pacing
 
-This class is a broad overview of the field of data analysis, and foundational skills in data and programming. We will cover a lot of information during the semester, and you will have many opportunities to practice these skills, discuss ethical aspects of data mining with your peers, and collaborate on projects. Some of you may be entering the classroom with more advanced prior knowledge of these topics, while others may be encountering these concepts for the first time. Group learning, coding, and discussion are key aspects of this course. This means that we all need to do our part to be prepared for each class, and to foster a positive and inquisitive learning environment.
+This class is a broad overview of the field of network analysis, and skills for visualizing networks and analyzing network data. We will cover a lot of information during the semester, and you will have many opportunities to practice these skills, discuss ethical aspects of network analysis with your peers, and collaborate on projects. Some of you may be entering the classroom with more advanced prior knowledge of these topics, while others may be encountering these concepts for the first time. Group learning, coding, and discussion are key aspects of this course. This means that we all need to do our part to be prepared for each class, and to foster a positive and inquisitive learning environment.
 
 In between classes you should:
 
 - Review your notes from class
 - Read relevant portions of your textbook or any online readings
-- Refer to this site for updates to the [schedule](/CIS241/schedule)
+- Refer to this site for updates to the [schedule](/CIS397-networks/schedule)
 - DO NOT wait until the last minute to begin your final project
 - Proofread your writing and coding assignments
 - EMAIL your instructor with any questions. Ask lots of questions!
@@ -25,7 +25,9 @@ Each class must create its own learning community as the result of shared effort
 
 Good participation should be understood as consistent and thoughtful contribution to the classroom community, an engagement with course materials and conversations, and a general responsiveness to (and respect for) one’s fellow students and instructor. This isn’t an accounting of how often you speak in class. Instead, it’s about what you offer to the intellectual life of the class, and everyone contributes to this on-going work in different ways.
 
-**You can miss 3 class sessions without penalty, and you don't need to contact me if you have missed or will miss a class**. However, if you miss more than 3 classes, you will be marked down one grade "step" for each additional class missed. (For example, if you miss four classes and your final grade is 90% (A-), your fourth absence will cause you to have a B+ instead.) Excessive absences may also affect your participation grade.
+**You can miss 3 class sessions without penalty, and you don't need to contact me if you have missed or will miss a class**. This is a generous policy that should cover absences due to illness, sports, academic trips, interviews, etc. If you have a special case, such as having to isolate due to COVID, contact me as soon as possible.
+
+However, if you miss more than 3 classes, you will be marked down one grade "step" for each additional class missed. (For example, if you miss four classes and your final grade is 90% (A-), your fourth absence will cause you to have a B+ instead.) Excessive absences may also affect your participation grade.
 
 Though you're not required to, you can always reach out to me or a classmate to find out what you missed. We're all in this together, and I'll do my best to make sure no one falls behind.
 
@@ -43,7 +45,7 @@ The guidelines above apply to typical short absences (missing just one class in 
 
 In these cases, **it's your responsibility to contact me as soon as you know you'll be out**. Let me know how long you expect the absence to be, and we can talk through what some of the expectations will be during this time and how you will complete the work.
 
-It's important that you attend class as much as you can, but it's also important that you stay home if you're sick and get the care you need. We can work on this balance together, and if you have any questions about you can always ask me!
+It's important that you attend class as much as you can, but it's also important that you stay home if you're sick and get the care you need. We can work on this balance together, and if you have any questions you can always ask me!
 
 #### Instructor Absence
 
@@ -71,9 +73,9 @@ Please be respectful with your use of laptops and technology in class. I request
 
 ### CIS PAL Tutors
 
-The CIS department has its own PAL tutors: they're available to help **Sunday--Thursday evenings from 7--10pm** in the CIS Lounge on the second floor of the Tech Center. There are peer tutors who can help with our class (CIS 241) on Sunday, Monday, Wednesday, and Thursday this semester. (I'll post more detailed tutor bios and schedules on [Sakai](https://sakai.washjeff.edu).)
+The CIS department has its own PAL tutors: they're available to help **Sunday--Thursday evenings from 7--10pm** in the CIS Lounge on the second floor of the Tech Center. (I'll post more detailed tutor bios and schedules on [Sakai](https://sakai.washjeff.edu).)
 
-All the CIS PAL tutors are students who've taken this class before and/or have lots of knowledge about Python and data analysis. They're a great resource, and they're there to help you! I encourage you to take advantage of their expertise when you have questions or need help.
+All the CIS PAL tutors are students who've taken multiple CIS classes before and/or have lots of knowledge about Python and data analysis. They're a great resource, and they're there to help you! I encourage you to take advantage of their expertise when you have questions or need help.
 
 ### Mental Health
 
@@ -99,7 +101,7 @@ All documents provided to you (i.e. syllabus, paper prompts, tests, etc...) are 
 
 ### Inclusion and Diversity
 
-This course is open to anyone interested in data mining and analysis. It is my intent to make all students feel welcome and served in this course by addressing their learning needs. We all (including myself) are continuously learning about different lived experiences and in this course we will encounter anti-racist pedagogy and confront inequities in how data is collected and used. In this course, if you encounter anything said (intentionally or unintentionally) that made you feel uncomfortable, please talk to me about it. If your learning is impacted by your background, or any life event going on outside of class, feel free to talk to me. Even if you choose not to share details, I would be happy to direct you to the right resources on campus.
+This course is open to anyone interested in network analysis. It is my intent to make all students feel welcome and served in this course by addressing their learning needs. We all (including myself) are continuously learning about different lived experiences and in this course we will encounter anti-racist pedagogy and confront inequities in how data is collected and used. In this course, if you encounter anything said (intentionally or unintentionally) that made you feel uncomfortable, please talk to me about it. If your learning is impacted by your background, or any life event going on outside of class, feel free to talk to me. Even if you choose not to share details, I would be happy to direct you to the right resources on campus.
 
 This semester we will address topics which may be emotionally difficult. I acknowledge that each of you has their own specific life history, family context, identity, body---and that these realities have an impact on how you understand and interact with our course materials. Therefore, I ask you to generally familiarize yourself with the content of our discussions ahead of time, and if for any reason you believe you will be unable to participate in a discussion of certain themes or elements, please contact me beforehand and/or seek the support of any of the formal or informal resources available to you on campus, some of which are included in this syllabus. I look forward to creating a safe learning environment together this semester!
 
