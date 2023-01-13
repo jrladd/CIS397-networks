@@ -3,7 +3,7 @@ title:  "Visualization Assignment"
 date:   2022-09-05 12:00:00 -0400
 show_date: false
 ---
-**Complete by: Tuesday 21 Feb. by 9am**
+**Complete by: Tuesday 28 Feb. by 12:50pm**
 
 Now that you've learned some of the principles and techniques behind network visualization, you'll create your own visualization. You'll complete the following two items:
 
