@@ -22,7 +22,7 @@ excerpt: "CIS 397. Washington & Jefferson College. Spring 2023."
 
 **Meeting Time: TR 12:50-2:35pm**
 
-Dr. Ladd's Student Drop-In Hours: T 11am-12pm & W 1-3pm in TECH 201  
+Dr. Ladd's Student Drop-In Hours: M 11:30am-1:30pm & W 1-3pm in TECH 201  
 or email for appointment, <jladd@washjeff.edu>
 
 ## Course Description
