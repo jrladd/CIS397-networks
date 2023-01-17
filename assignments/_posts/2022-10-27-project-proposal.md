@@ -1,6 +1,6 @@
 ---
 title:  "Final Project Proposal"
-date:   2022-10-26 17:00:00 -0400
+date:   2023-01-18 17:00:00 -0400
 show_date: false
 ---
 **Complete by: Thursday 13 Apr. by 9am**

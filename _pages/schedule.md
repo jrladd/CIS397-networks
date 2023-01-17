@@ -6,8 +6,14 @@ sidebar:
   - title: "Note on the schedule"
     text: "*Keep in mind that some of this schedule could change throughout the semester. However, if anything changes I'll update this page, and I'll be sure to give you plenty of advance notice.*"
   - title: "Software"
-    text: "All projects in this course will be scripted and analyzed using Python, an open source programming language and environment. Specifically, we will be using Jupyter Lab as our programming environment. **No previous experience with Python, statistical software packages, or computer programming is required.**"
+    text: "Most projects in this course will be scripted and analyzed using Python, an open source programming language and environment. Specifically, we will be using Jupyter Lab as our programming environment."
 ---
+
+## Books and Materials
+
+Easley, David and John Kleiberg. [*Networks, Crowds, and Markets: Reasoning About a Highly Connected World*](https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf). Cambridge UP, 2010. (NCM)
+
+Ahnert, Ruth, et al. [*The Network Turn: Changing Perspectives in the Humanities*](https://doi.org/10.1017/9781108866804). Cambridge UP, 2020. (NT)
 
 ## Class Schedule
 

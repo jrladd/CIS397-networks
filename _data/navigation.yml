@@ -1,12 +1,10 @@
 main:
   - title: "Schedule & Readings"
     url: /schedule/
-    #- title: "Workshops"
-    #url: /workshops/
   - title: "Assignments"
     url: /assignments/
-  - title: "Workshops"
-    url: /workshops/
+#  - title: "Workshops"
+#    url: /workshops/
   - title: "Course Policies"
     url: /policies/
   - title: "Ground Rules"
