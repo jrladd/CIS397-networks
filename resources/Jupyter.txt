@@ -1,2 +1,0 @@
-set path=C:\ProgramData\Anaconda3\Library\bin\;%path%
-C:\ProgramData\Anaconda3\Scripts\jupyter-lab --notebook-dir="H://"
