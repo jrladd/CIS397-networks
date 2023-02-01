@@ -9,6 +9,8 @@ On this page you'll find prompts for the different assignments in our course, as
 
 Some of these assignments, especially Projects 1 & 2, will take the form of Jupyter notebook reports. You can refer to the [Criteria for Good Reports](/CIS397-networks/criteria/) as a guide.
 
+You can also view the [weekly homework assignments](/CIS397-networks/homework/).
+
 ## Assignment Breakdown
 
 Assignment|Percentage
