@@ -7,6 +7,8 @@ main:
 #    url: /workshops/
   - title: "Course Policies"
     url: /policies/
+  - title: "Resources"
+    url: /resources/
   - title: "Ground Rules"
     url: /groundrules/
     #  - title: "Slides"

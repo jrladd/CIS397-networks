@@ -17,6 +17,8 @@ header:
       url: "/policies/"
     - label: "Sakai"
       url: "https://sakai.washjeff.edu"
+    - label: "Resources"
+      url: "/resources/"
 excerpt: "CIS 397. Washington & Jefferson College. Spring 2023."
 ---
 

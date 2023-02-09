@@ -14609,11 +14609,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import NetworkX and key data science libraries</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14628,7 +14632,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We explored some methods for importing network data in a previous class, but sometimes importing data as a CSV can be tricky. In these cases, it's often easier to use pandas to import the data, and then convert from there:</p>
+<p>We already explored some methods for importing network data in a previous class, but sometimes importing data as a CSV can be tricky. In these cases, it's often easier to use pandas to import the data, and then convert from there:</p>
 
 </div>
 </div>
@@ -14638,7 +14642,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel_pd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;marvel-unimodal-edges.csv&quot;</span><span class="p">)</span>
@@ -14688,49 +14692,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">nodes</span><span class="p">)</span> <span class="c1"># Number of nodes</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>327</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">edges</span><span class="p">)</span> <span class="c1"># Number of edges</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">nodes</span><span class="p">)</span> <span class="c1"># Number of nodes</span>
 </pre></div>
 
      </div>
@@ -14752,7 +14717,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>9891</pre>
+<pre>327</pre>
 </div>
 
 </div>
@@ -14769,7 +14734,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">()</span> <span class="c1"># Alternative method for number of edges</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">edges</span><span class="p">)</span> <span class="c1"># Number of edges</span>
 </pre></div>
 
      </div>
@@ -14808,7 +14773,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel</span><span class="o">.</span><span class="n">is_directed</span><span class="p">()</span> <span class="c1"># Is the graph directed?</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">()</span> <span class="c1"># Alternative method for number of edges</span>
 </pre></div>
 
      </div>
@@ -14825,6 +14790,45 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>9891</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel</span><span class="o">.</span><span class="n">is_directed</span><span class="p">()</span> <span class="c1"># Is the graph directed?</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -14855,49 +14859,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">shortest_path</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s2">&quot;Black Panther / T&#39;chal&quot;</span><span class="p">,</span> 	<span class="s2">&quot;Gambit / Remy Lebeau&quot;</span><span class="p">)</span> <span class="c1"># Shortest path as list</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#34;Black Panther / T&#39;chal&#34;, &#39;Firestar / Angelica Jo&#39;, &#39;Gambit / Remy Lebeau&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">shortest_path_length</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s2">&quot;Black Panther / T&#39;chal&quot;</span><span class="p">,</span> 	<span class="s2">&quot;Gambit / Remy Lebeau&quot;</span><span class="p">)</span> <span class="c1">#Shortest path length (Distance)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">shortest_path</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s2">&quot;Black Panther / T&#39;chal&quot;</span><span class="p">,</span> 	<span class="s2">&quot;Gambit / Remy Lebeau&quot;</span><span class="p">)</span> <span class="c1"># Shortest path as list</span>
 </pre></div>
 
      </div>
@@ -14919,7 +14884,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2</pre>
+<pre>[&#34;Black Panther / T&#39;chal&#34;, &#39;Firestar / Angelica Jo&#39;, &#39;Gambit / Remy Lebeau&#39;]</pre>
 </div>
 
 </div>
@@ -14936,7 +14901,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">average_shortest_path_length</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># Average shortest path length (Average distance)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">shortest_path_length</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s2">&quot;Black Panther / T&#39;chal&quot;</span><span class="p">,</span> <span class="s2">&quot;Gambit / Remy Lebeau&quot;</span><span class="p">)</span> <span class="c1">#Shortest path length (Distance)</span>
 </pre></div>
 
      </div>
@@ -14958,7 +14923,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>1.873004258831917</pre>
+<pre>2</pre>
 </div>
 
 </div>
@@ -14973,6 +14938,45 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">average_shortest_path_length</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># Average shortest path length (Average distance)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>1.873004258831917</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">diameter</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span>
@@ -14991,7 +14995,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -15022,49 +15026,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">is_connected</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># Is the graph connected?</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">number_connected_components</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># How many components are there?</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">is_connected</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># Is the graph connected?</span>
 </pre></div>
 
      </div>
@@ -15086,7 +15051,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>1</pre>
+<pre>True</pre>
 </div>
 
 </div>
@@ -15103,10 +15068,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the largest connected component (as a node set)</span>
-<span class="n">components</span> <span class="o">=</span> <span class="p">[</span><span class="n">G</span> <span class="k">for</span> <span class="n">G</span> <span class="ow">in</span> <span class="n">nx</span><span class="o">.</span><span class="n">connected_components</span><span class="p">(</span><span class="n">marvel</span><span class="p">)]</span>
-<span class="n">largest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">components</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">largest</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">number_connected_components</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># How many components are there?</span>
 </pre></div>
 
      </div>
@@ -15120,21 +15082,277 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>1</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the largest connected component (as a node set)</span>
+<span class="n">components</span> <span class="o">=</span> <span class="p">[</span><span class="n">G</span> <span class="k">for</span> <span class="n">G</span> <span class="ow">in</span> <span class="n">nx</span><span class="o">.</span><span class="n">connected_components</span><span class="p">(</span><span class="n">marvel</span><span class="p">)]</span>
+<span class="n">largest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">components</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Centrality">Centrality<a class="anchor-link" href="#Centrality">&#182;</a></h2><p>Below I show just one example, but there are a range of <a href="https://networkx.org/documentation/stable/reference/algorithms/centrality.html">centrality functions</a> in NetworkX.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate betweenness centrality for every node</span>
+<span class="n">bc</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Add a node attribute from a centrality measure</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">set_node_attributes</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span><span class="n">bc</span><span class="p">,</span><span class="s2">&quot;betweenness&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a dataframe of nodes</span>
+<span class="n">nodes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">nodes</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span>
+<span class="n">nodes</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="s2">&quot;character&quot;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">nodes</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>character</th>
+      <th>betweenness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Absorbing Man / Carl C</td>
+      <td>0.000607</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Angel / Warren Kenneth</td>
+      <td>0.012523</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Ant-man / Dr. Henry J.</td>
+      <td>0.010304</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Ant-man Ii / Scott Har</td>
+      <td>0.000426</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Apocalypse / En Sabah</td>
+      <td>0.000777</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>322</th>
+      <td>Wrecker Iii / Dirk Gar</td>
+      <td>0.000659</td>
+    </tr>
+    <tr>
+      <th>323</th>
+      <td>X-man / Nathan Grey</td>
+      <td>0.000116</td>
+    </tr>
+    <tr>
+      <th>324</th>
+      <td>Zabu</td>
+      <td>0.000098</td>
+    </tr>
+    <tr>
+      <th>325</th>
+      <td>Zero</td>
+      <td>0.000033</td>
+    </tr>
+    <tr>
+      <th>326</th>
+      <td>Zeus</td>
+      <td>0.000065</td>
+    </tr>
+  </tbody>
+</table>
+<p>327 rows × 2 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># See the distribution for a metric</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;betweenness&quot;</span><span class="p">,</span> <span class="n">binwidth</span><span class="o">=</span><span class="mf">.005</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">nodes</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x11a577490&gt;</pre>
+</div>
+
+</div>
 <div class="jp-OutputArea-child">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;Sunfire / Shiro Yoshid&#39;, &#39;Namorita / Nita Prenti&#39;, &#39;Screaming Mimi / Melis&#39;, &#39;Black Widow / Natasha&#39;, &#39;Lizard / Dr. Curtis Co&#39;, &#39;Jameson, J. Jonah&#39;, &#39;Ross, Gen. Thaddeus&#39;, &#39;Banshee / Sean Cassidy&#39;, &#39;Mr. Fantastic Doppel&#39;, &#39;Domino Iii / Beatrice / &#39;, &#39;Volcana / Marsha Rosen&#39;, &#39;Jack Of Hearts / Jack&#39;, &#39;Destiny Ii / Irene Adl&#39;, &#39;Dagger / Tandy Bowen&#39;, &#39;Iron Man / Tony Stark&#39;, &#39;Corsair&#39;, &#39;Mercado, Joy&#39;, &#39;Thompson, Eugene Fla&#39;, &#39;Stingray / Dr. Walter&#39;, &#39;Silver Surfer / Norrin&#39;, &#39;Magik / Illyana Rasput&#39;, &#39;Strong Guy / Guido Car&#39;, &#39;Attuma&#39;, &#39;Austin, Susan&#39;, &#39;Northstar / Jean-paul&#39;, &#39;Citizen V Ii / Helmut&#39;, &#39;Rogue  / &#39;, &#39;Deadpool / Jack / Wade W&#39;, &#39;Starfox / Eros&#39;, &#39;Multiple Man / James A&#39;, &#39;Medusa / Medusalith Am&#39;, &#39;Beast / Henry &amp;hank&amp; P&#39;, &#39;Caliban / &#39;, &#39;Longshot&#39;, &#39;Leader / Sam Sterns&#39;, &#39;Ghost Rider Iii / Dan&#39;, &#39;Boomer / Tabitha Smith&#39;, &#39;Mole Man / Harvey Rupe&#39;, &#39;Tilby, Trish / Patrici&#39;, &#39;Professor X / Charles&#39;, &#39;Juggernaut / Cain Mark&#39;, &#39;Hyperion&#39;, &#39;Raza Longknife&#39;, &#39;Pip / Prince Gofern&#39;, &#39;Dr. Druid / Anthony Lu&#39;, &#39;Balder [asgardian]&#39;, &#39;Heimdall [asgardian]&#39;, &#39;She-hulk / Jennifer Wa&#39;, &#39;Hela [asgardian]&#39;, &#39;Black Bolt / Blackanto&#39;, &#39;Demolition Man / Denni&#39;, &#39;Sersi / Sylvia&#39;, &#39;Guardian / James Macdo&#39;, &#39;Parker, May&#39;, &#39;Death&#39;, &#39;Diamond Lil / Lillian&#39;, &#39;Sasquatch / Walter Lan&#39;, &#39;Mirage Ii / Danielle M&#39;, &#39;Ghost Rider Ii / Johnn&#39;, &#39;Norriss, Sister Barb&#39;, &#39;Tombstone / Lonnie Tho&#39;, &#39;Blob / Fred J. Dukes&#39;, &#39;Box Iv / Madison Jeffr&#39;, &#39;Dr. Strange / Stephen&#39;, &#34;Deathbird [shi&#39;ar]&#34;, &#39;Gee / Alex Power&#39;, &#39;Dr. Doom / Victor Von&#39;, &#39;Darkhawk / Chris Powel&#39;, &#39;Iron Fist / Daniel Ran&#39;, &#39;Mad Dog / Colonel Buzz&#39;, &#39;Black Knight V / Dane&#39;, &#39;Mister Hyde / Calvin Z&#39;, &#39;Fandral [asgardian]&#39;, &#39;Gargoyle Ii / Isaac Ch&#39;, &#39;Wasp / Janet Van Dyne&#39;, &#39;Wizard / Bentley Wittm&#39;, &#39;Lockheed&#39;, &#39;Ghaur [deviant]&#39;, &#39;Binary / Carol Danvers&#39;, &#39;Tigra / Greer Nelson&#39;, &#39;Eternity / Adam Qadmon&#39;, &#39;Gorgon [inhuman]&#39;, &#39;Jones, Richard Milho&#39;, &#39;Darkstar / Laynia Serg&#39;, &#39;Carter, Sharon&#39;, &#39;Gyrich, Henry Peter&#39;, &#39;Rictor / Julio Esteban&#39;, &#39;Urich, Ben&#39;, &#39;Jameson, Col. John&#39;, &#39;Stryfe&#39;, &#39;Iron Man Iv / James R.&#39;, &#39;Summers, Nathan Chri&#39;, &#39;Cortez, Fabian&#39;, &#39;Magma / Amara Aquilla / &#39;, &#39;Osborn, Liz Allan&#39;, &#39;Spider-man / Peter Parker&#39;, &#39;Hunter, Stevie&#39;, &#39;Uatu&#39;, &#39;Puck / Eugene Milton J&#39;, &#39;Fury, Col. Nicholas&#39;, &#39;Bishop  / &#39;, &#39;Wing, Colleen&#39;, &#39;Angel / Warren Kenneth&#39;, &#39;Kingpin / Wilson Fisk&#39;, &#39;Page, Karen&#39;, &#39;Doc Samson / Dr. Leona&#39;, &#39;Ulik&#39;, &#39;Polaris / Lorna Dane&#39;, &#39;Enchantress / Amora / He&#39;, &#39;Firestar / Angelica Jo&#39;, &#39;Beyonder&#39;, &#39;Moondragon / Heather D&#39;, &#39;Daytripper / Amanda Se&#39;, &#39;Mystique / Raven Darkh&#39;, &#34;Ch&#39;od&#34;, &#39;Storm / Ororo Munroe S&#39;, &#39;Triathlon / Delroy Gar&#39;, &#39;Mactaggert, Moira Ki&#39;, &#39;Clea&#39;, &#39;Dugan, Timothy Aloyi&#39;, &#39;Summers, Madelyne Ma&#39;, &#39;Piledriver Ii / Brian&#39;, &#39;Spider-woman Ii / Juli&#39;, &#39;Iron Man Doppelgange&#39;, &#39;Swordsman / Jacques Du&#39;, &#39;Snowbird / Narya / Anne&#39;, &#39;Bulldozer / Henry Camp&#39;, &#39;Firelord / Pyreus Kril&#39;, &#39;Usagent / Captain John&#39;, &#39;Banner, Betty Ross T&#39;, &#39;Cyclops / Scott Summer&#39;, &#39;Warlock Ii / Adam Warl&#39;, &#39;Hogan, Virginia Pepp&#39;, &#39;Makkari / Mike Khary / I&#39;, &#39;Moon Knight / Marc Spe&#39;, &#39;Living Lightning / Mig&#39;, &#39;Charcoal / Charlie Bur&#39;, &#39;Stankowicz, Fabian&#39;, &#39;Pyro / Allerdyce Johnn&#39;, &#39;Magneto / Magnus / Eric&#39;, &#39;Lilandra Neramani [s&#39;, &#39;Vanguard / Nicolai Kry&#39;, &#39;Captain Marvel Ii / Mo&#39;, &#39;Jocasta&#39;, &#39;Thunderbird Ii / James&#39;, &#39;Osborn, Harry&#39;, &#39;Siryn / Theresa Rourke&#39;, &#39;Sif&#39;, &#39;Triton&#39;, &#39;Leeds, Ned&#39;, &#39;Zero&#39;, &#39;Ka-zar / Kevin Plunder&#39;, &#34;Karma / Xi&#39;an Coy Manh&#34;, &#39;Cushing, Kate&#39;, &#39;Zabu&#39;, &#39;Kincaid, Dr. Jane Fo&#39;, &#39;Nova Ii / Frankie Raye&#39;, &#39;Hulk / Dr. Robert Bruce Banner&#39;, &#39;X-man / Nathan Grey&#39;, &#39;Masters, Alicia Reis&#39;, &#39;Cage, Luke / Carl Luca&#39;, &#39;Lyja Lazerfist [skru&#39;, &#39;Whizzer Ii / Stanley S&#39;, &#39;Thena&#39;, &#39;Hobgoblin V / Jason Ph&#39;, &#34;Black Panther / T&#39;chal&#34;, &#39;Captain America&#39;, &#39;Carter, Peggy&#39;, &#39;Volstagg&#39;, &#39;White Queen / Emma Fro&#39;, &#39;Vizier&#39;, &#39;Hercules [greek God]&#39;, &#39;Mr. Fantastic / Reed R&#39;, &#39;Gladiator Ii&#39;, &#39;Thunderstrike / Eric K&#39;, &#39;Mockingbird / Dr. Barb&#39;, &#39;Karnak [inhuman]&#39;, &#39;Watson-parker, Mary&#39;, &#39;Hellstorm / Daimon Hel&#39;, &#39;Hogun [asgardian]&#39;, &#39;Cobra / Klaus Vorhees&#39;, &#39;Nomad Iii / Jack Monro&#39;, &#39;Marrow / Sarah&#39;, &#39;Firebird / Bonita Juar&#39;, &#39;Mandarin&#39;, &#39;Odin [asgardian]&#39;, &#39;Wonder Man / Simon Wil&#39;, &#39;Ant-man / Dr. Henry J.&#39;, &#39;Dr. Spectrum / Joseph&#39;, &#39;Absorbing Man / Carl C&#39;, &#39;Shatterstar Ii / Gavee&#39;, &#39;Gamora&#39;, &#39;Wolfsbane / Rahne Sinc&#39;, &#39;Thor / Dr. Donald Blak&#39;, &#39;Le Fey, Morgan&#39;, &#39;Nelson, Franklin Fog&#39;, &#34;Mam&#39;selle Hepzibah&#34;, &#39;Sabretooth / Victor Cr&#39;, &#39;Magus&#39;, &#39;Black Cat / Felicia Ha&#39;, &#39;Ms. Marvel Ii / Sharon&#39;, &#39;Katzenberg, Nick&#39;, &#39;Nightcrawler / Kurt Wa&#39;, &#34;O&#39;brien, Michael&#34;, &#39;Forgotten One / Gilgam&#39;, &#39;Apocalypse / En Sabah&#39;, &#39;Green Goblin / Norman&#39;, &#39;Hodge, Cameron&#39;, &#39;Dazzler Ii / Allison B&#39;, &#39;Sandman / William Bake&#39;, &#39;High Evolutionary / He&#39;, &#39;Wrecker Iii / Dirk Gar&#39;, &#39;Cannonball Ii / Sam Gu&#39;, &#39;Diamondback Ii / Rache&#39;, &#39;Punisher Ii / Frank Ca&#39;, &#39;Justice Ii / Vance Ast&#39;, &#39;Spiral&#39;, &#39;Molecule Man / Owen Re&#39;, &#39;Grant, Gloria Glory&#39;, &#39;Leech&#39;, &#39;Cooper, Dr. Valerie&#39;, &#39;Human Torch / Johnny S&#39;, &#39;Titania Ii / Mary Skee&#39;, &#39;Spider-woman / Jessica&#39;, &#39;Sunspot / Roberto Daco&#39;, &#39;Mantis / ? Brandt&#39;, &#39;Vision&#39;, &#39;Richards, Franklin B&#39;, &#39;Jarvis, Edwin&#39;, &#39;Redwing&#39;, &#39;Knight, Misty&#39;, &#39;Gambit / Remy Lebeau&#39;, &#39;Scarlet Witch / Wanda&#39;, &#39;Aurora / Jeanne-marie&#39;, &#39;Galactus / Galan&#39;, &#39;Loki [asgardian]&#39;, &#39;Marvel Girl / Jean Grey&#39;, &#39;Wild Child / Kyle Gibn&#39;, &#39;Scanner Ii&#39;, &#39;Ultron&#39;, &#39;Skids / Sally Blevins&#39;, &#39;Thanos&#39;, &#39;Robertson, Joe&#39;, &#39;Silhouette&#39;, &#39;Harkness, Agatha&#39;, &#39;Falcon / Sam Wilson&#39;, &#39;Puppet Master / Philli&#39;, &#39;Black Mamba / Tanya Se&#39;, &#39;Callisto&#39;, &#39;Hudson, Heather&#39;, &#39;Cypher / Doug Ramsey&#39;, &#39;Crystal [inhuman]&#39;, &#39;Wolverine / Logan&#39;, &#39;Warlock Iii&#39;, &#39;Machine Man / X-51&#39;, &#39;Shadowcat / Katherine&#39;, &#39;Nighthawk Ii / Kyle Ri&#39;, &#39;Human Torch Android / &#39;, &#39;Captain Britain / Bria&#39;, &#39;Maddicks, Arthur Art&#39;, &#39;Hawk&#39;, &#39;Watson, Anna&#39;, &#39;Jones, Gabe&#39;, &#39;Husk / Paige Guthrie&#39;, &#39;Ant-man Ii / Scott Har&#39;, &#39;Bridge, George Washi&#39;, &#39;Colossus Ii / Peter Ra&#39;, &#39;Pharaoh Rama-tut&#39;, &#39;Sub-mariner / Namor Ma&#39;, &#39;Moonstone Ii / Karla S&#39;, &#39;Invisible Woman / Sue&#39;, &#39;Forge&#39;, &#39;Klaw / Ulysses Klaw&#39;, &#39;Jubilee / Jubilation L&#39;, &#39;Red Skull / Johann Sch&#39;, &#39;Dr. Octopus / Otto Oct&#39;, &#39;Maximus [inhuman]&#39;, &#39;Lockjaw [inhuman]&#39;, &#39;Avalanche / Dominic Pe&#39;, &#39;Ikaris / Ike Harris [e&#39;, &#39;Meggan&#39;, &#39;Toad / Mortimer Toynbe&#39;, &#39;Power Man / Erik Joste&#39;, &#39;Lubenski, Nate&#39;, &#39;Captain Marvel / Capta&#39;, &#39;Colossus Ii Doppelga&#39;, &#39;Quicksilver / Pietro M&#39;, &#39;Havok / Alex Summers&#39;, &#39;Thing / Benjamin J. Gr&#39;, &#39;Night Thrasher / Duane&#39;, &#39;De La Fontaine, Cont&#39;, &#39;Speedball / Robbie Bal&#39;, &#39;Psylocke / Elisabeth B&#39;, &#39;Mephisto&#39;, &#39;Wong&#39;, &#39;Asp Ii / Cleo&#39;, &#39;Daredevil / Matt Murdo&#39;, &#39;Nova / Richard Rider&#39;, &#39;Black King / Sebastian&#39;, &#39;Thunderball / Dr. Elio&#39;, &#39;Firefist / Rusty Colli&#39;, &#39;Rage / Elvin Daryl Hal&#39;, &#39;Shaman / Michael Twoyo&#39;, &#39;Phoenix Iii / Rachel S&#39;, &#39;Skin / Angelo Espinosa&#39;, &#39;Rosenthal, Bernie&#39;, &#39;Sauron / Dr. Karl Lyko&#39;, &#39;Robertson, Randy&#39;, &#39;Drax / Arthur Douglas&#39;, &#39;Arranger / &#39;, &#39;Leeds, Betty Brant&#39;, &#39;Fixer Ii / Paul Norber&#39;, &#39;Thanos Doppelganger&#39;, &#39;Cloak / Tyrone Johnson&#39;, &#39;Luna / Luna Maximoff [&#39;, &#39;Beetle / Abner Ronald&#39;, &#39;Legion Ii / David Hall&#39;, &#39;Hammerhead&#39;, &#39;Feral / Maria Callasan&#39;, &#39;Spider-man Clone / Ben&#39;, &#39;Iceman / Robert Bobby&#39;, &#39;Beta Ray Bill&#39;, &#39;Mr. Sinister / Nathan&#39;, &#39;Hellcat / Patsy Walker&#39;, &#39;Zeus&#39;, &#39;Collector / Taneleer T&#39;, &#39;Quasar Iii / Wendell V&#39;}
-</pre>
-</div>
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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yy16++23JZ0r5Ntuu021atXS22+/rcLCQm3atEnt27dXcHCwjh8/LkkaP368xo8fX2qs7OxsSdLx48f1/vvv6/333y+1TbVq1Tx+Dg8PL5XJ/Op10hERERfcpqxzGjNmjOLi4vTOO+9o4sSJmjhxopo3b66nn35a9evX1+233y6Xy6X09HTNmTNHs2bN0rXXXquRI0fq9ttvP++/HVBZKGSgkpWUT4ni4mLl5OQoKipKDodD9913n7p161Zqv18X2i917NhRc+bM0Zdffqkvv/xSY8aM0TXXXKOCggJlZmYqIyPDXXTR0dGSpFGjRik5ObnUWFdddZUkqWrVqmrXrp369u1bapvgYO/+KSnrnEJDQzVo0CANGjRI3333nT766CPNmTNHjzzyiN577z1JUvfu3dW9e3edPHlSmzdv1oIFC/Too4+qZcuWqlmzplfnDVQEl6yBSvbxxx+rqKjI/fMHH3ygoqIidejQQQ0bNtSBAwfUpEkT91e9evU0a9YsZWRkSJKCgoJKjdmkSRNVq1ZNc+bMUVhYmBo3bqwaNWroxhtv1OzZs1VQUKAOHTpIkm688UZVr15d//73vz2OU7NmTT3//PPatWuXJCk5OVn79+9XgwYN3Ns0btxYS5Ys0fr16736b1KWOeXn56tLly5avHixJOmaa67RPffco27duum7776TJD388MMaMmSIpHN3KH7/+99r8ODBKioqcp9lA7bgDBmoZD/88IMeeugh9enTR998841mzJihm266SW3bttWIESM0YMAAPfLII7rjjjtUXFysxYsXa8eOHRo8eLCkc0UjSf/4xz901VVXqX79+nI6nerQoYPWrFmjm2++2X0G27p1a73++utq1aqVrr76aknnCn348OF68sknFRQUpE6dOik3N1dz5szRkSNH1KhRI0nS4MGDdffdd2vgwIHq1auXwsLC9MYbb2jDhg2aOXOmV/9NyjKn8PBwNWrUSLNnz1ZISIgSEhJ08OBBrV692v1yrjZt2uipp57Sc889pw4dOig3N1ezZ8/WDTfcoPr163t1zkBFUchAJevdu7dOnjypIUOGKDQ0VD169NCjjz4qh8Ohm2++WYsWLdLs2bM1dOhQhYSEqFGjRnrllVfcT4qqV6+eunfvruXLl2vTpk169913JZ17HHnNmjVq3bq1+1glhVzypKcSf/zjH1WlShUtXLhQb7zxhiIjI9WiRQtNnz5d1113nSSpfv36Wr58uV544QWNGjVKxhjFx8frL3/5i2699Vav/7uUZU4TJkzQiy++qMWLF+uHH35Q9erV9Yc//EHDhg2TJN199906e/asVqxYofT0dIWHh6tt27Z69NFHFRIS4vU5AxXhML9+pgUAAPA7HkMGAMACFDIAABagkAEAsACFDACABShkAAAsQCEDAGABChkAAAtQyAAAWIBCBgDAAhQyAAAWoJABALAAhQwAgAX+P1rhk08sCWGFAAAAAElFTkSuQmCC
+"
+class="
+"
+>
 </div>
 
 </div>
 
 </div>
 
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>There's plenty of information on <a href="https://pandas.pydata.org/docs/user_guide/index.html">Pandas</a> and <a href="https://seaborn.pydata.org/tutorial.html">Seaborn</a> available in their documentation, too!</p>
+
+</div>
+</div>
+</div>
 </div>
 </body>
 
