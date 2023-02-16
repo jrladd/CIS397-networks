@@ -22,7 +22,7 @@ Choose from one of the following sample social network datasets:
 
 - Donald Knuth's *Les Miserables* network: [lesmis.gml](/CIS397-networks/data/lesmis.gml)
 - Wayne Zachary's Karate Club network: [karate.gml](/CIS397-networks/data/karate.gml)
-- Adamic and Glance's political blogs network: [polblogs.gml](/CIS397-networks.data/polblogs.gml)
+- Adamic and Glance's political blogs network: [polblogs.gml](/CIS397-networks/data/polblogs.gml)
 - Watts and Strogatz's power grid network: [power.gml](/CIS397-networks/data/power.gml)
 
 All of these datasets are in GML format, which is compatible with most of the software we learned about. If you're using a tool (i.e. Observable) that doesn't work well with GML, remember that you can load the data in NetworkX and [export it in many different formats](https://networkx.org/documentation/stable/reference/readwrite/index.html).
