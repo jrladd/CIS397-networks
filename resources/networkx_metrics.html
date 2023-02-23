@@ -10321,8 +10321,6 @@ html {
 body {
   color: unset;
   font-family: var(--jp-ui-font-family);
-  width: 70%;
-  margin: auto;
 }
 
 p {
@@ -14609,7 +14607,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import NetworkX and key data science libraries</span>
@@ -14637,12 +14635,24 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>(There's plenty of information on <a href="https://pandas.pydata.org/docs/user_guide/index.html">Pandas</a> and <a href="https://seaborn.pydata.org/tutorial.html">Seaborn</a> available in their documentation, too!)</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel_pd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;marvel-unimodal-edges.csv&quot;</span><span class="p">)</span>
@@ -14692,10 +14702,49 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">nodes</span><span class="p">)</span> <span class="c1"># Number of nodes</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>327</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">edges</span><span class="p">)</span> <span class="c1"># Number of edges</span>
 </pre></div>
 
      </div>
@@ -14717,7 +14766,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>327</pre>
+<pre>9891</pre>
 </div>
 
 </div>
@@ -14734,7 +14783,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">edges</span><span class="p">)</span> <span class="c1"># Number of edges</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">()</span> <span class="c1"># Alternative method for number of edges</span>
 </pre></div>
 
      </div>
@@ -14773,45 +14822,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">()</span> <span class="c1"># Alternative method for number of edges</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>9891</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">marvel</span><span class="o">.</span><span class="n">is_directed</span><span class="p">()</span> <span class="c1"># Is the graph directed?</span>
 </pre></div>
 
@@ -14828,7 +14838,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -14859,10 +14869,49 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">shortest_path</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s2">&quot;Black Panther / T&#39;chal&quot;</span><span class="p">,</span> 	<span class="s2">&quot;Gambit / Remy Lebeau&quot;</span><span class="p">)</span> <span class="c1"># Shortest path as list</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#34;Black Panther / T&#39;chal&#34;, &#39;Firestar / Angelica Jo&#39;, &#39;Gambit / Remy Lebeau&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">shortest_path_length</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s2">&quot;Black Panther / T&#39;chal&quot;</span><span class="p">,</span> <span class="s2">&quot;Gambit / Remy Lebeau&quot;</span><span class="p">)</span> <span class="c1">#Shortest path length (Distance)</span>
 </pre></div>
 
      </div>
@@ -14884,7 +14933,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#34;Black Panther / T&#39;chal&#34;, &#39;Firestar / Angelica Jo&#39;, &#39;Gambit / Remy Lebeau&#39;]</pre>
+<pre>2</pre>
 </div>
 
 </div>
@@ -14901,7 +14950,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">shortest_path_length</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s2">&quot;Black Panther / T&#39;chal&quot;</span><span class="p">,</span> <span class="s2">&quot;Gambit / Remy Lebeau&quot;</span><span class="p">)</span> <span class="c1">#Shortest path length (Distance)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">average_shortest_path_length</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># Average shortest path length (Average distance)</span>
 </pre></div>
 
      </div>
@@ -14923,45 +14972,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">average_shortest_path_length</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># Average shortest path length (Average distance)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>1.873004258831917</pre>
 </div>
 
@@ -14976,7 +14986,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">diameter</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span>
@@ -14995,7 +15005,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -15026,10 +15036,49 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">is_connected</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># Is the graph connected?</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">number_connected_components</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># How many components are there?</span>
 </pre></div>
 
      </div>
@@ -15051,45 +15100,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">number_connected_components</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span> <span class="c1"># How many components are there?</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>1</pre>
 </div>
 
@@ -15104,7 +15114,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the largest connected component (as a node set)</span>
@@ -15134,7 +15144,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate betweenness centrality for every node</span>
@@ -15151,7 +15161,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Add a node attribute from a centrality measure</span>
@@ -15168,7 +15178,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a dataframe of nodes</span>
@@ -15190,7 +15200,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -15290,7 +15300,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># See the distribution for a metric</span>
@@ -15310,13 +15320,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x11a577490&gt;</pre>
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x107002fa0&gt;</pre>
 </div>
 
 </div>
@@ -15348,11 +15358,1059 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There's plenty of information on <a href="https://pandas.pydata.org/docs/user_guide/index.html">Pandas</a> and <a href="https://seaborn.pydata.org/tutorial.html">Seaborn</a> available in their documentation, too!</p>
+<h2 id="Triangles-and-Clustering">Triangles and Clustering<a class="anchor-link" href="#Triangles-and-Clustering">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get number of triangles for every node</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">triangles</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span>
+
+<span class="c1"># n.b. Pay attention to the following note from the NetworkX docs:</span>
+<span class="c1"># When computing triangles for the entire graph each triangle is counted three times, once at each node.</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#34;Black Panther / T&#39;chal&#34;: 2837,
+ &#39;Loki [asgardian]&#39;: 1055,
+ &#39;Mantis / ? Brandt&#39;: 277,
+ &#39;Iceman / Robert Bobby&#39;: 5320,
+ &#39;Marvel Girl / Jean Grey&#39;: 5050,
+ &#39;Cyclops / Scott Summer&#39;: 6474,
+ &#39;Klaw / Ulysses Klaw&#39;: 1012,
+ &#39;Human Torch / Johnny S&#39;: 6282,
+ &#39;Richards, Franklin B&#39;: 2444,
+ &#39;Wolverine / Logan&#39;: 7168,
+ &#39;Firebird / Bonita Juar&#39;: 643,
+ &#39;Mr. Fantastic / Reed R&#39;: 6191,
+ &#39;Medusa / Medusalith Am&#39;: 1019,
+ &#39;Dr. Strange / Stephen&#39;: 4522,
+ &#39;Jack Of Hearts / Jack&#39;: 576,
+ &#39;Mephisto&#39;: 916,
+ &#39;Thanos&#39;: 2337,
+ &#39;Swordsman / Jacques Du&#39;: 342,
+ &#39;Collector / Taneleer T&#39;: 393,
+ &#39;Lockjaw [inhuman]&#39;: 865,
+ &#39;Sub-mariner / Namor Ma&#39;: 4197,
+ &#39;Pharaoh Rama-tut&#39;: 2562,
+ &#39;Ant-man Ii / Scott Har&#39;: 917,
+ &#39;Lyja Lazerfist [skru&#39;: 399,
+ &#39;Gorgon [inhuman]&#39;: 837,
+ &#39;Nighthawk Ii / Kyle Ri&#39;: 422,
+ &#39;Cage, Luke / Carl Luca&#39;: 1200,
+ &#39;Colossus Ii / Peter Ra&#39;: 6169,
+ &#39;Hellcat / Patsy Walker&#39;: 1278,
+ &#39;Karnak [inhuman]&#39;: 873,
+ &#39;Death&#39;: 756,
+ &#39;Redwing&#39;: 214,
+ &#39;Daredevil / Matt Murdo&#39;: 4276,
+ &#39;Norriss, Sister Barb&#39;: 1244,
+ &#39;Rage / Elvin Daryl Hal&#39;: 875,
+ &#39;Starfox / Eros&#39;: 1686,
+ &#39;Demolition Man / Denni&#39;: 349,
+ &#39;Sersi / Sylvia&#39;: 1906,
+ &#39;Spider-man / Peter Parker&#39;: 6533,
+ &#39;Vision&#39;: 6672,
+ &#39;Uatu&#39;: 2324,
+ &#39;Binary / Carol Danvers&#39;: 2010,
+ &#39;Gyrich, Henry Peter&#39;: 985,
+ &#39;Nightcrawler / Kurt Wa&#39;: 3965,
+ &#39;Angel / Warren Kenneth&#39;: 5562,
+ &#39;Silver Surfer / Norrin&#39;: 3697,
+ &#39;She-hulk / Jennifer Wa&#39;: 5868,
+ &#39;Ghaur [deviant]&#39;: 155,
+ &#39;Dr. Doom / Victor Von&#39;: 4084,
+ &#39;Storm / Ororo Munroe S&#39;: 6220,
+ &#39;Scarlet Witch / Wanda&#39;: 6216,
+ &#39;Toad / Mortimer Toynbe&#39;: 537,
+ &#39;Hulk / Dr. Robert Bruce Banner&#39;: 5984,
+ &#39;Firestar / Angelica Jo&#39;: 2659,
+ &#39;Wonder Man / Simon Wil&#39;: 5412,
+ &#39;Drax / Arthur Douglas&#39;: 2307,
+ &#39;Dugan, Timothy Aloyi&#39;: 825,
+ &#39;Carter, Sharon&#39;: 152,
+ &#39;Black Knight V / Dane&#39;: 4610,
+ &#39;Sunfire / Shiro Yoshid&#39;: 953,
+ &#39;Triton&#39;: 606,
+ &#39;Ultron&#39;: 1099,
+ &#39;Jones, Richard Milho&#39;: 1590,
+ &#39;Iron Man / Tony Stark&#39;: 5983,
+ &#39;Nelson, Franklin Fog&#39;: 425,
+ &#39;Captain America&#39;: 7888,
+ &#39;Jarvis, Edwin&#39;: 3437,
+ &#39;Quasar Iii / Wendell V&#39;: 4047,
+ &#39;Jameson, J. Jonah&#39;: 1628,
+ &#39;Masters, Alicia Reis&#39;: 1333,
+ &#39;Magneto / Magnus / Eric&#39;: 3138,
+ &#39;Invisible Woman / Sue&#39;: 6242,
+ &#39;Professor X / Charles&#39;: 6081,
+ &#39;Iron Fist / Daniel Ran&#39;: 1049,
+ &#39;Black Bolt / Blackanto&#39;: 849,
+ &#39;Hawk&#39;: 5168,
+ &#39;Sandman / William Bake&#39;: 1088,
+ &#39;Falcon / Sam Wilson&#39;: 2034,
+ &#39;Stingray / Dr. Walter&#39;: 575,
+ &#39;Justice Ii / Vance Ast&#39;: 876,
+ &#39;Hercules [greek God]&#39;: 5530,
+ &#39;Usagent / Captain John&#39;: 2828,
+ &#39;Captain Marvel Ii / Mo&#39;: 2628,
+ &#39;Crystal [inhuman]&#39;: 3778,
+ &#39;Tigra / Greer Nelson&#39;: 2055,
+ &#39;Spider-woman Ii / Juli&#39;: 2654,
+ &#39;Machine Man / X-51&#39;: 814,
+ &#39;Mockingbird / Dr. Barb&#39;: 1399,
+ &#39;Captain Marvel / Capta&#39;: 564,
+ &#39;Wasp / Janet Van Dyne&#39;: 5937,
+ &#39;Fury, Col. Nicholas&#39;: 2781,
+ &#39;Thor / Dr. Donald Blak&#39;: 5939,
+ &#39;Quicksilver / Pietro M&#39;: 5163,
+ &#39;Captain Britain / Bria&#39;: 692,
+ &#39;Shadowcat / Katherine&#39;: 2969,
+ &#39;Black Widow / Natasha&#39;: 4685,
+ &#39;Ant-man / Dr. Henry J.&#39;: 5128,
+ &#39;Moon Knight / Marc Spe&#39;: 1736,
+ &#39;Jocasta&#39;: 316,
+ &#39;Moondragon / Heather D&#39;: 3402,
+ &#39;Thing / Benjamin J. Gr&#39;: 6867,
+ &#39;Beast / Henry &amp;hank&amp; P&#39;: 6660,
+ &#39;Nova / Richard Rider&#39;: 3271,
+ &#39;Wrecker Iii / Dirk Gar&#39;: 1027,
+ &#39;Warlock Ii / Adam Warl&#39;: 2287,
+ &#39;Piledriver Ii / Brian&#39;: 928,
+ &#39;Thunderball / Dr. Elio&#39;: 1042,
+ &#39;Dr. Octopus / Otto Oct&#39;: 998,
+ &#39;Banner, Betty Ross T&#39;: 581,
+ &#39;Avalanche / Dominic Pe&#39;: 571,
+ &#39;Attuma&#39;: 243,
+ &#39;Hela [asgardian]&#39;: 279,
+ &#39;Doc Samson / Dr. Leona&#39;: 685,
+ &#39;Guardian / James Macdo&#39;: 456,
+ &#39;Northstar / Jean-paul&#39;: 2137,
+ &#39;Dr. Druid / Anthony Lu&#39;: 2075,
+ &#39;Watson-parker, Mary&#39;: 805,
+ &#39;Mystique / Raven Darkh&#39;: 1067,
+ &#39;Pyro / Allerdyce Johnn&#39;: 740,
+ &#39;Destiny Ii / Irene Adl&#39;: 418,
+ &#39;Mister Hyde / Calvin Z&#39;: 189,
+ &#39;Ghost Rider Ii / Johnn&#39;: 279,
+ &#39;Mole Man / Harvey Rupe&#39;: 544,
+ &#39;Firelord / Pyreus Kril&#39;: 540,
+ &#39;Leader / Sam Sterns&#39;: 136,
+ &#39;Le Fey, Morgan&#39;: 141,
+ &#39;Bulldozer / Henry Camp&#39;: 928,
+ &#39;Forgotten One / Gilgam&#39;: 310,
+ &#39;Balder [asgardian]&#39;: 358,
+ &#39;Hogun [asgardian]&#39;: 539,
+ &#39;Hellstorm / Daimon Hel&#39;: 341,
+ &#39;Aurora / Jeanne-marie&#39;: 1466,
+ &#34;O&#39;brien, Michael&#34;: 437,
+ &#39;Stankowicz, Fabian&#39;: 259,
+ &#39;Screaming Mimi / Melis&#39;: 332,
+ &#39;Moonstone Ii / Karla S&#39;: 556,
+ &#39;Fixer Ii / Paul Norber&#39;: 399,
+ &#39;Darkstar / Laynia Serg&#39;: 441,
+ &#39;Vanguard / Nicolai Kry&#39;: 275,
+ &#39;Gamora&#39;: 1577,
+ &#39;Psylocke / Elisabeth B&#39;: 4245,
+ &#39;Rogue  / &#39;: 5545,
+ &#39;Sasquatch / Walter Lan&#39;: 3138,
+ &#39;Luna / Luna Maximoff [&#39;: 357,
+ &#39;Whizzer Ii / Stanley S&#39;: 96,
+ &#39;Dr. Spectrum / Joseph&#39;: 96,
+ &#39;Kingpin / Wilson Fisk&#39;: 518,
+ &#39;Clea&#39;: 171,
+ &#39;Polaris / Lorna Dane&#39;: 3325,
+ &#39;De La Fontaine, Cont&#39;: 174,
+ &#39;Heimdall [asgardian]&#39;: 193,
+ &#39;Red Skull / Johann Sch&#39;: 429,
+ &#39;Thompson, Eugene Fla&#39;: 507,
+ &#39;Wong&#39;: 412,
+ &#39;Parker, May&#39;: 541,
+ &#39;Green Goblin / Norman&#39;: 207,
+ &#39;Night Thrasher / Duane&#39;: 252,
+ &#39;Eternity / Adam Qadmon&#39;: 1623,
+ &#39;Galactus / Galan&#39;: 3125,
+ &#39;Triathlon / Delroy Gar&#39;: 334,
+ &#39;Beetle / Abner Ronald&#39;: 659,
+ &#39;Lilandra Neramani [s&#39;: 1290,
+ &#39;Odin [asgardian]&#39;: 903,
+ &#39;Hogan, Virginia Pepp&#39;: 113,
+ &#39;Mad Dog / Colonel Buzz&#39;: 166,
+ &#39;Kincaid, Dr. Jane Fo&#39;: 249,
+ &#39;Wizard / Bentley Wittm&#39;: 309,
+ &#39;Charcoal / Charlie Bur&#39;: 165,
+ &#39;Blob / Fred J. Dukes&#39;: 1189,
+ &#39;Cloak / Tyrone Johnson&#39;: 164,
+ &#39;Thunderstrike / Eric K&#39;: 3331,
+ &#39;Power Man / Erik Joste&#39;: 580,
+ &#39;Human Torch Android / &#39;: 468,
+ &#39;Juggernaut / Cain Mark&#39;: 349,
+ &#39;Absorbing Man / Carl C&#39;: 981,
+ &#39;Volstagg&#39;: 466,
+ &#39;Shaman / Michael Twoyo&#39;: 2187,
+ &#39;Snowbird / Narya / Anne&#39;: 381,
+ &#39;Dagger / Tandy Bowen&#39;: 273,
+ &#39;Phoenix Iii / Rachel S&#39;: 892,
+ &#39;Mandarin&#39;: 177,
+ &#39;Fandral [asgardian]&#39;: 546,
+ &#39;Ms. Marvel Ii / Sharon&#39;: 265,
+ &#39;Pip / Prince Gofern&#39;: 1569,
+ &#39;Enchantress / Amora / He&#39;: 1465,
+ &#39;Jameson, Col. John&#39;: 328,
+ &#39;Cooper, Dr. Valerie&#39;: 1411,
+ &#39;Nova Ii / Frankie Raye&#39;: 1992,
+ &#39;Darkhawk / Chris Powel&#39;: 1881,
+ &#39;Nomad Iii / Jack Monro&#39;: 197,
+ &#39;Robertson, Joe&#39;: 654,
+ &#39;Gargoyle Ii / Isaac Ch&#39;: 549,
+ &#39;Namorita / Nita Prenti&#39;: 2840,
+ &#39;Iron Man Iv / James R.&#39;: 1520,
+ &#39;Ross, Gen. Thaddeus&#39;: 384,
+ &#39;Harkness, Agatha&#39;: 2391,
+ &#39;Carter, Peggy&#39;: 387,
+ &#39;Hyperion&#39;: 160,
+ &#39;Living Lightning / Mig&#39;: 2888,
+ &#39;Jones, Gabe&#39;: 304,
+ &#39;Osborn, Liz Allan&#39;: 451,
+ &#39;Leeds, Betty Brant&#39;: 508,
+ &#39;Sif&#39;: 444,
+ &#39;Dazzler Ii / Allison B&#39;: 970,
+ &#39;Molecule Man / Owen Re&#39;: 731,
+ &#39;Speedball / Robbie Bal&#39;: 2263,
+ &#39;Lizard / Dr. Curtis Co&#39;: 778,
+ &#39;Volcana / Marsha Rosen&#39;: 615,
+ &#39;Lockheed&#39;: 796,
+ &#39;Titania Ii / Mary Skee&#39;: 748,
+ &#39;Boomer / Tabitha Smith&#39;: 1306,
+ &#39;Summers, Nathan Chri&#39;: 1861,
+ &#39;Summers, Madelyne Ma&#39;: 524,
+ &#39;Mactaggert, Moira Ki&#39;: 1662,
+ &#39;Cannonball Ii / Sam Gu&#39;: 2512,
+ &#39;Tilby, Trish / Patrici&#39;: 423,
+ &#39;Skids / Sally Blevins&#39;: 371,
+ &#39;Wolfsbane / Rahne Sinc&#39;: 3135,
+ &#39;Leech&#39;: 249,
+ &#39;Mirage Ii / Danielle M&#39;: 907,
+ &#39;Gambit / Remy Lebeau&#39;: 3766,
+ &#39;Jubilee / Jubilation L&#39;: 1117,
+ &#39;Strong Guy / Guido Car&#39;: 2793,
+ &#39;Spiral&#39;: 328,
+ &#39;Banshee / Sean Cassidy&#39;: 1321,
+ &#39;Legion Ii / David Hall&#39;: 377,
+ &#39;Havok / Alex Summers&#39;: 3894,
+ &#39;Longshot&#39;: 450,
+ &#39;Forge&#39;: 1666,
+ &#39;Sabretooth / Victor Cr&#39;: 659,
+ &#39;Maddicks, Arthur Art&#39;: 225,
+ &#39;Warlock Iii&#39;: 1030,
+ &#39;Rictor / Julio Esteban&#39;: 953,
+ &#39;Sunspot / Roberto Daco&#39;: 1687,
+ &#39;Firefist / Rusty Colli&#39;: 334,
+ &#39;Bishop  / &#39;: 1466,
+ &#39;Daytripper / Amanda Se&#39;: 258,
+ &#39;Wild Child / Kyle Gibn&#39;: 1274,
+ &#39;Thunderbird Ii / James&#39;: 1105,
+ &#39;Sauron / Dr. Karl Lyko&#39;: 267,
+ &#39;Siryn / Theresa Rourke&#39;: 965,
+ &#39;Shatterstar Ii / Gavee&#39;: 682,
+ &#39;Marrow / Sarah&#39;: 424,
+ &#39;Feral / Maria Callasan&#39;: 515,
+ &#39;Callisto&#39;: 302,
+ &#39;Mr. Sinister / Nathan&#39;: 395,
+ &#39;Raza Longknife&#39;: 332,
+ &#39;Spider-woman / Jessica&#39;: 371,
+ &#39;Cypher / Doug Ramsey&#39;: 589,
+ &#34;Deathbird [shi&#39;ar]&#34;: 297,
+ &#39;Hudson, Heather&#39;: 2525,
+ &#39;Stryfe&#39;: 518,
+ &#39;Iron Man Doppelgange&#39;: 1031,
+ &#39;Puck / Eugene Milton J&#39;: 2347,
+ &#39;Silhouette&#39;: 519,
+ &#39;Cortez, Fabian&#39;: 189,
+ &#39;Black King / Sebastian&#39;: 402,
+ &#39;Magik / Illyana Rasput&#39;: 605,
+ &#39;Zabu&#39;: 229,
+ &#39;Domino Iii / Beatrice / &#39;: 229,
+ &#39;Caliban / &#39;: 607,
+ &#39;Apocalypse / En Sabah&#39;: 1043,
+ &#39;Hunter, Stevie&#39;: 588,
+ &#39;Corsair&#39;: 486,
+ &#34;Ch&#39;od&#34;: 377,
+ &#34;Mam&#39;selle Hepzibah&#34;: 378,
+ &#39;Zero&#39;: 431,
+ &#39;X-man / Nathan Grey&#39;: 403,
+ &#34;Karma / Xi&#39;an Coy Manh&#34;: 331,
+ &#39;Mr. Fantastic Doppel&#39;: 1153,
+ &#39;Beyonder&#39;: 482,
+ &#39;Multiple Man / James A&#39;: 2008,
+ &#39;Colossus Ii Doppelga&#39;: 325,
+ &#39;Scanner Ii&#39;: 139,
+ &#39;Ka-zar / Kevin Plunder&#39;: 418,
+ &#39;White Queen / Emma Fro&#39;: 514,
+ &#39;Magma / Amara Aquilla / &#39;: 333,
+ &#39;Thanos Doppelganger&#39;: 1688,
+ &#39;Magus&#39;: 2249,
+ &#39;Knight, Misty&#39;: 259,
+ &#39;Wing, Colleen&#39;: 53,
+ &#39;Puppet Master / Philli&#39;: 273,
+ &#39;Maximus [inhuman]&#39;: 185,
+ &#39;Punisher Ii / Frank Ca&#39;: 333,
+ &#39;Zeus&#39;: 217,
+ &#39;Box Iv / Madison Jeffr&#39;: 156,
+ &#39;Thena&#39;: 159,
+ &#39;Black Cat / Felicia Ha&#39;: 270,
+ &#39;Gee / Alex Power&#39;: 123,
+ &#39;Spider-man Clone / Ben&#39;: 111,
+ &#39;Ulik&#39;: 128,
+ &#39;Citizen V Ii / Helmut&#39;: 285,
+ &#39;High Evolutionary / He&#39;: 439,
+ &#39;Hobgoblin V / Jason Ph&#39;: 213,
+ &#39;Ghost Rider Iii / Dan&#39;: 111,
+ &#39;Cushing, Kate&#39;: 224,
+ &#39;Katzenberg, Nick&#39;: 174,
+ &#39;Vizier&#39;: 208,
+ &#39;Tombstone / Lonnie Tho&#39;: 154,
+ &#39;Mercado, Joy&#39;: 191,
+ &#39;Hammerhead&#39;: 138,
+ &#39;Arranger / &#39;: 170,
+ &#39;Osborn, Harry&#39;: 291,
+ &#39;Cobra / Klaus Vorhees&#39;: 64,
+ &#39;Leeds, Ned&#39;: 228,
+ &#39;Watson, Anna&#39;: 249,
+ &#39;Urich, Ben&#39;: 431,
+ &#39;Robertson, Randy&#39;: 199,
+ &#39;Page, Karen&#39;: 97,
+ &#39;Grant, Gloria Glory&#39;: 295,
+ &#39;Lubenski, Nate&#39;: 162,
+ &#39;Ikaris / Ike Harris [e&#39;: 114,
+ &#39;Rosenthal, Bernie&#39;: 133,
+ &#39;Gladiator Ii&#39;: 214,
+ &#39;Beta Ray Bill&#39;: 188,
+ &#39;Bridge, George Washi&#39;: 92,
+ &#39;Diamond Lil / Lillian&#39;: 81,
+ &#39;Asp Ii / Cleo&#39;: 27,
+ &#39;Black Mamba / Tanya Se&#39;: 27,
+ &#39;Meggan&#39;: 187,
+ &#39;Austin, Susan&#39;: 122,
+ &#39;Diamondback Ii / Rache&#39;: 120,
+ &#39;Makkari / Mike Khary / I&#39;: 195,
+ &#39;Hodge, Cameron&#39;: 301,
+ &#39;Skin / Angelo Espinosa&#39;: 72,
+ &#39;Husk / Paige Guthrie&#39;: 93,
+ &#39;Deadpool / Jack / Wade W&#39;: 61}</pre>
+</div>
 
 </div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get clustering coefficients</span>
+<span class="c1"># These can be added to a node dataframe as above</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">clustering</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span>
+</pre></div>
+
+     </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#34;Black Panther / T&#39;chal&#34;: 0.5617821782178218,
+ &#39;Loki [asgardian]&#39;: 0.5579058699101005,
+ &#39;Mantis / ? Brandt&#39;: 0.9233333333333333,
+ &#39;Iceman / Robert Bobby&#39;: 0.40794417606011807,
+ &#39;Marvel Girl / Jean Grey&#39;: 0.42312526183493926,
+ &#39;Cyclops / Scott Summer&#39;: 0.3353361649228219,
+ &#39;Klaw / Ulysses Klaw&#39;: 0.7071977638015374,
+ &#39;Human Torch / Johnny S&#39;: 0.3390544041450777,
+ &#39;Richards, Franklin B&#39;: 0.5838509316770186,
+ &#39;Wolverine / Logan&#39;: 0.2975508509755085,
+ &#39;Firebird / Bonita Juar&#39;: 0.914651493598862,
+ &#39;Mr. Fantastic / Reed R&#39;: 0.3174383428190535,
+ &#39;Medusa / Medusalith Am&#39;: 0.8318367346938775,
+ &#39;Dr. Strange / Stephen&#39;: 0.4581560283687943,
+ &#39;Jack Of Hearts / Jack&#39;: 0.7773279352226721,
+ &#39;Mephisto&#39;: 0.5948051948051948,
+ &#39;Thanos&#39;: 0.7782217782217782,
+ &#39;Swordsman / Jacques Du&#39;: 0.9047619047619048,
+ &#39;Collector / Taneleer T&#39;: 0.903448275862069,
+ &#39;Lockjaw [inhuman]&#39;: 0.8737373737373737,
+ &#39;Sub-mariner / Namor Ma&#39;: 0.41337535703732886,
+ &#39;Pharaoh Rama-tut&#39;: 0.7176470588235294,
+ &#39;Ant-man Ii / Scott Har&#39;: 0.7192156862745098,
+ &#39;Lyja Lazerfist [skru&#39;: 0.8044354838709677,
+ &#39;Gorgon [inhuman]&#39;: 0.8847780126849895,
+ &#39;Nighthawk Ii / Kyle Ri&#39;: 0.8508064516129032,
+ &#39;Cage, Luke / Carl Luca&#39;: 0.6345848757271285,
+ &#39;Colossus Ii / Peter Ra&#39;: 0.3509500512003641,
+ &#39;Hellcat / Patsy Walker&#39;: 0.6758328926493918,
+ &#39;Karnak [inhuman]&#39;: 0.8818181818181818,
+ &#39;Death&#39;: 0.8372093023255814,
+ &#39;Redwing&#39;: 0.7133333333333334,
+ &#39;Daredevil / Matt Murdo&#39;: 0.4095785440613027,
+ &#39;Norriss, Sister Barb&#39;: 0.6797814207650273,
+ &#39;Rage / Elvin Daryl Hal&#39;: 0.8094357076780758,
+ &#39;Starfox / Eros&#39;: 0.6415525114155252,
+ &#39;Demolition Man / Denni&#39;: 0.8022988505747126,
+ &#39;Sersi / Sylvia&#39;: 0.5739235170129479,
+ &#39;Spider-man / Peter Parker&#39;: 0.276201750306515,
+ &#39;Vision&#39;: 0.29550890247143236,
+ &#39;Uatu&#39;: 0.6997892201144233,
+ &#39;Binary / Carol Danvers&#39;: 0.5499316005471956,
+ &#39;Gyrich, Henry Peter&#39;: 0.6632996632996633,
+ &#39;Nightcrawler / Kurt Wa&#39;: 0.39606432923783835,
+ &#39;Angel / Warren Kenneth&#39;: 0.39180050718512255,
+ &#39;Silver Surfer / Norrin&#39;: 0.5265631676399374,
+ &#39;She-hulk / Jennifer Wa&#39;: 0.37250047609979053,
+ &#39;Ghaur [deviant]&#39;: 0.8157894736842105,
+ &#39;Dr. Doom / Victor Von&#39;: 0.5186031746031746,
+ &#39;Storm / Ororo Munroe S&#39;: 0.3464216095795043,
+ &#39;Scarlet Witch / Wanda&#39;: 0.33203354521660167,
+ &#39;Toad / Mortimer Toynbe&#39;: 0.7638691322901849,
+ &#39;Hulk / Dr. Robert Bruce Banner&#39;: 0.3633052030842086,
+ &#39;Firestar / Angelica Jo&#39;: 0.6493284493284494,
+ &#39;Wonder Man / Simon Wil&#39;: 0.4201863354037267,
+ &#39;Drax / Arthur Douglas&#39;: 0.8313513513513513,
+ &#39;Dugan, Timothy Aloyi&#39;: 0.7313829787234043,
+ &#39;Carter, Sharon&#39;: 0.8,
+ &#39;Black Knight V / Dane&#39;: 0.46707193515704154,
+ &#39;Sunfire / Shiro Yoshid&#39;: 0.7474509803921568,
+ &#39;Triton&#39;: 0.8620199146514936,
+ &#39;Ultron&#39;: 0.8288084464555053,
+ &#39;Jones, Richard Milho&#39;: 0.7191316146540027,
+ &#39;Iron Man / Tony Stark&#39;: 0.2918109544944642,
+ &#39;Nelson, Franklin Fog&#39;: 0.5448717948717948,
+ &#39;Captain America&#39;: 0.23792718607667482,
+ &#39;Jarvis, Edwin&#39;: 0.4098986285032797,
+ &#39;Quasar Iii / Wendell V&#39;: 0.5221935483870968,
+ &#39;Jameson, J. Jonah&#39;: 0.4670109007458405,
+ &#39;Masters, Alicia Reis&#39;: 0.8064125831820932,
+ &#39;Magneto / Magnus / Eric&#39;: 0.446944879646774,
+ &#39;Invisible Woman / Sue&#39;: 0.33000264340470525,
+ &#39;Professor X / Charles&#39;: 0.3572855464159812,
+ &#39;Iron Fist / Daniel Ran&#39;: 0.6811688311688312,
+ &#39;Black Bolt / Blackanto&#39;: 0.8974630021141649,
+ &#39;Hawk&#39;: 0.35976331360946745,
+ &#39;Sandman / William Bake&#39;: 0.7064935064935065,
+ &#39;Falcon / Sam Wilson&#39;: 0.5834767641996558,
+ &#39;Stingray / Dr. Walter&#39;: 0.817923186344239,
+ &#39;Justice Ii / Vance Ast&#39;: 0.7448979591836735,
+ &#39;Hercules [greek God]&#39;: 0.3804609563123495,
+ &#39;Usagent / Captain John&#39;: 0.6610565684899485,
+ &#39;Captain Marvel Ii / Mo&#39;: 0.5529139490847885,
+ &#39;Crystal [inhuman]&#39;: 0.5865548827821767,
+ &#39;Tigra / Greer Nelson&#39;: 0.6843156843156843,
+ &#39;Spider-woman Ii / Juli&#39;: 0.6626716604244695,
+ &#39;Machine Man / X-51&#39;: 0.9014396456256921,
+ &#39;Mockingbird / Dr. Barb&#39;: 0.7398202009518773,
+ &#39;Captain Marvel / Capta&#39;: 0.8468468468468469,
+ &#39;Wasp / Janet Van Dyne&#39;: 0.33775173512344975,
+ &#39;Fury, Col. Nicholas&#39;: 0.4903897019925939,
+ &#39;Thor / Dr. Donald Blak&#39;: 0.284026781444285,
+ &#39;Quicksilver / Pietro M&#39;: 0.4110341533317411,
+ &#39;Captain Britain / Bria&#39;: 0.7315010570824524,
+ &#39;Shadowcat / Katherine&#39;: 0.46918457648546147,
+ &#39;Black Widow / Natasha&#39;: 0.43658559314136614,
+ &#39;Ant-man / Dr. Henry J.&#39;: 0.38839657653563586,
+ &#39;Moon Knight / Marc Spe&#39;: 0.7399829497016198,
+ &#39;Jocasta&#39;: 0.9002849002849003,
+ &#39;Moondragon / Heather D&#39;: 0.6476299257567104,
+ &#39;Thing / Benjamin J. Gr&#39;: 0.3013031459786758,
+ &#39;Beast / Henry &amp;hank&amp; P&#39;: 0.31850789096126253,
+ &#39;Nova / Richard Rider&#39;: 0.6226917951646678,
+ &#39;Wrecker Iii / Dirk Gar&#39;: 0.7176799440950384,
+ &#39;Warlock Ii / Adam Warl&#39;: 0.8241441441441442,
+ &#39;Piledriver Ii / Brian&#39;: 0.7891156462585034,
+ &#39;Thunderball / Dr. Elio&#39;: 0.7016835016835017,
+ &#39;Dr. Octopus / Otto Oct&#39;: 0.62531328320802,
+ &#39;Banner, Betty Ross T&#39;: 0.8723723723723724,
+ &#39;Avalanche / Dominic Pe&#39;: 0.7705802968960864,
+ &#39;Attuma&#39;: 0.8804347826086957,
+ &#39;Hela [asgardian]&#39;: 0.5284090909090909,
+ &#39;Doc Samson / Dr. Leona&#39;: 0.8782051282051282,
+ &#39;Guardian / James Macdo&#39;: 0.8636363636363636,
+ &#39;Northstar / Jean-paul&#39;: 0.7911884487226953,
+ &#39;Dr. Druid / Anthony Lu&#39;: 0.8350100603621731,
+ &#39;Watson-parker, Mary&#39;: 0.4869933454325469,
+ &#39;Mystique / Raven Darkh&#39;: 0.6454930429522081,
+ &#39;Pyro / Allerdyce Johnn&#39;: 0.714975845410628,
+ &#39;Destiny Ii / Irene Adl&#39;: 0.7916666666666666,
+ &#39;Mister Hyde / Calvin Z&#39;: 0.6847826086956522,
+ &#39;Ghost Rider Ii / Johnn&#39;: 0.7948717948717948,
+ &#39;Mole Man / Harvey Rupe&#39;: 0.9142857142857143,
+ &#39;Firelord / Pyreus Kril&#39;: 0.8571428571428571,
+ &#39;Leader / Sam Sterns&#39;: 1.0,
+ &#39;Le Fey, Morgan&#39;: 0.9215686274509803,
+ &#39;Bulldozer / Henry Camp&#39;: 0.7891156462585034,
+ &#39;Forgotten One / Gilgam&#39;: 0.8201058201058201,
+ &#39;Balder [asgardian]&#39;: 0.678030303030303,
+ &#39;Hogun [asgardian]&#39;: 0.5697674418604651,
+ &#39;Hellstorm / Daimon Hel&#39;: 0.9021164021164021,
+ &#39;Aurora / Jeanne-marie&#39;: 0.8282485875706215,
+ &#34;O&#39;brien, Michael&#34;: 0.7789661319073083,
+ &#39;Stankowicz, Fabian&#39;: 0.8633333333333333,
+ &#39;Screaming Mimi / Melis&#39;: 0.7632183908045977,
+ &#39;Moonstone Ii / Karla S&#39;: 0.7128205128205128,
+ &#39;Fixer Ii / Paul Norber&#39;: 0.7112299465240641,
+ &#39;Darkstar / Laynia Serg&#39;: 0.8891129032258065,
+ &#39;Vanguard / Nicolai Kry&#39;: 0.9166666666666666,
+ &#39;Gamora&#39;: 0.9216832261835184,
+ &#39;Psylocke / Elisabeth B&#39;: 0.4909784871616933,
+ &#39;Rogue  / &#39;: 0.3906029867568329,
+ &#39;Sasquatch / Walter Lan&#39;: 0.7179135209334249,
+ &#39;Luna / Luna Maximoff [&#39;: 0.8793103448275862,
+ &#39;Whizzer Ii / Stanley S&#39;: 0.9142857142857143,
+ &#39;Dr. Spectrum / Joseph&#39;: 0.9142857142857143,
+ &#39;Kingpin / Wilson Fisk&#39;: 0.4592198581560284,
+ &#39;Clea&#39;: 0.9,
+ &#39;Polaris / Lorna Dane&#39;: 0.5446355446355446,
+ &#39;De La Fontaine, Cont&#39;: 0.7532467532467533,
+ &#39;Heimdall [asgardian]&#39;: 0.8354978354978355,
+ &#39;Red Skull / Johann Sch&#39;: 0.6102418207681366,
+ &#39;Thompson, Eugene Fla&#39;: 0.5888501742160279,
+ &#39;Wong&#39;: 0.886021505376344,
+ &#39;Parker, May&#39;: 0.5991140642303433,
+ &#39;Green Goblin / Norman&#39;: 0.8181818181818182,
+ &#39;Night Thrasher / Duane&#39;: 0.7753846153846153,
+ &#39;Eternity / Adam Qadmon&#39;: 0.8868852459016393,
+ &#39;Galactus / Galan&#39;: 0.6574794866400169,
+ &#39;Triathlon / Delroy Gar&#39;: 0.8835978835978836,
+ &#39;Beetle / Abner Ronald&#39;: 0.6656565656565656,
+ &#39;Lilandra Neramani [s&#39;: 0.6398809523809523,
+ &#39;Odin [asgardian]&#39;: 0.5863636363636363,
+ &#39;Hogan, Virginia Pepp&#39;: 0.9416666666666667,
+ &#39;Mad Dog / Colonel Buzz&#39;: 0.7904761904761904,
+ &#39;Kincaid, Dr. Jane Fo&#39;: 0.6587301587301587,
+ &#39;Wizard / Bentley Wittm&#39;: 0.7610837438423645,
+ &#39;Charcoal / Charlie Bur&#39;: 0.7857142857142857,
+ &#39;Blob / Fred J. Dukes&#39;: 0.6287678476996298,
+ &#39;Cloak / Tyrone Johnson&#39;: 0.5942028985507246,
+ &#39;Thunderstrike / Eric K&#39;: 0.6219193427931292,
+ &#39;Power Man / Erik Joste&#39;: 0.6736353077816493,
+ &#39;Human Torch Android / &#39;: 0.7428571428571429,
+ &#39;Juggernaut / Cain Mark&#39;: 0.8022988505747126,
+ &#39;Absorbing Man / Carl C&#39;: 0.7398190045248869,
+ &#39;Volstagg&#39;: 0.5682926829268292,
+ &#39;Shaman / Michael Twoyo&#39;: 0.7881081081081082,
+ &#39;Snowbird / Narya / Anne&#39;: 0.8758620689655172,
+ &#39;Dagger / Tandy Bowen&#39;: 0.6724137931034483,
+ &#39;Phoenix Iii / Rachel S&#39;: 0.623340321453529,
+ &#39;Mandarin&#39;: 0.7662337662337663,
+ &#39;Fandral [asgardian]&#39;: 0.5515151515151515,
+ &#39;Ms. Marvel Ii / Sharon&#39;: 0.8153846153846154,
+ &#39;Pip / Prince Gofern&#39;: 0.8864406779661017,
+ &#39;Enchantress / Amora / He&#39;: 0.624467178175618,
+ &#39;Jameson, Col. John&#39;: 0.5206349206349207,
+ &#39;Cooper, Dr. Valerie&#39;: 0.5842650103519669,
+ &#39;Nova Ii / Frankie Raye&#39;: 0.874451273046532,
+ &#39;Darkhawk / Chris Powel&#39;: 0.7788819875776397,
+ &#39;Nomad Iii / Jack Monro&#39;: 0.6061538461538462,
+ &#39;Robertson, Joe&#39;: 0.5561224489795918,
+ &#39;Gargoyle Ii / Isaac Ch&#39;: 0.8243243243243243,
+ &#39;Namorita / Nita Prenti&#39;: 0.6638616175783076,
+ &#39;Iron Man Iv / James R.&#39;: 0.7307692307692307,
+ &#39;Ross, Gen. Thaddeus&#39;: 0.9458128078817734,
+ &#39;Harkness, Agatha&#39;: 0.8171565276828435,
+ &#39;Carter, Peggy&#39;: 0.6504201680672269,
+ &#39;Hyperion&#39;: 0.8421052631578947,
+ &#39;Living Lightning / Mig&#39;: 0.7901504787961696,
+ &#39;Jones, Gabe&#39;: 0.8042328042328042,
+ &#39;Osborn, Liz Allan&#39;: 0.6415362731152204,
+ &#39;Leeds, Betty Brant&#39;: 0.6195121951219512,
+ &#39;Sif&#39;: 0.631578947368421,
+ &#39;Dazzler Ii / Allison B&#39;: 0.7315233785822021,
+ &#39;Molecule Man / Owen Re&#39;: 0.9371794871794872,
+ &#39;Speedball / Robbie Bal&#39;: 0.7734107997265892,
+ &#39;Lizard / Dr. Curtis Co&#39;: 0.6897163120567376,
+ &#39;Volcana / Marsha Rosen&#39;: 0.9761904761904762,
+ &#39;Lockheed&#39;: 0.649795918367347,
+ &#39;Titania Ii / Mary Skee&#39;: 0.8283499446290143,
+ &#39;Boomer / Tabitha Smith&#39;: 0.6088578088578088,
+ &#39;Summers, Nathan Chri&#39;: 0.5468704084631207,
+ &#39;Summers, Madelyne Ma&#39;: 0.7867867867867868,
+ &#39;Mactaggert, Moira Ki&#39;: 0.5534465534465535,
+ &#39;Cannonball Ii / Sam Gu&#39;: 0.4190158465387823,
+ &#39;Tilby, Trish / Patrici&#39;: 0.8011363636363636,
+ &#39;Skids / Sally Blevins&#39;: 0.7479838709677419,
+ &#39;Wolfsbane / Rahne Sinc&#39;: 0.4700149925037481,
+ &#39;Leech&#39;: 0.6587301587301587,
+ &#39;Mirage Ii / Danielle M&#39;: 0.5486993345432547,
+ &#39;Gambit / Remy Lebeau&#39;: 0.518732782369146,
+ &#39;Jubilee / Jubilation L&#39;: 0.6528345996493279,
+ &#39;Strong Guy / Guido Car&#39;: 0.652875175315568,
+ &#39;Spiral&#39;: 0.8078817733990148,
+ &#39;Banshee / Sean Cassidy&#39;: 0.5630861040068201,
+ &#39;Legion Ii / David Hall&#39;: 0.9285714285714286,
+ &#39;Havok / Alex Summers&#39;: 0.5106215578284815,
+ &#39;Longshot&#39;: 0.8522727272727273,
+ &#39;Forge&#39;: 0.6339421613394216,
+ &#39;Sabretooth / Victor Cr&#39;: 0.8448717948717949,
+ &#39;Maddicks, Arthur Art&#39;: 0.6923076923076923,
+ &#39;Warlock Iii&#39;: 0.6019871420222093,
+ &#39;Rictor / Julio Esteban&#39;: 0.6915820029027576,
+ &#39;Sunspot / Roberto Daco&#39;: 0.5079795242396868,
+ &#39;Firefist / Rusty Colli&#39;: 0.6733870967741935,
+ &#39;Bishop  / &#39;: 0.6435469710272168,
+ &#39;Daytripper / Amanda Se&#39;: 0.86,
+ &#39;Wild Child / Kyle Gibn&#39;: 0.8272727272727273,
+ &#39;Thunderbird Ii / James&#39;: 0.6458211572180012,
+ &#39;Sauron / Dr. Karl Lyko&#39;: 0.89,
+ &#39;Siryn / Theresa Rourke&#39;: 0.7002902757619739,
+ &#39;Shatterstar Ii / Gavee&#39;: 0.7921022067363531,
+ &#39;Marrow / Sarah&#39;: 0.803030303030303,
+ &#39;Feral / Maria Callasan&#39;: 0.8174603174603174,
+ &#39;Callisto&#39;: 0.8603988603988604,
+ &#39;Mr. Sinister / Nathan&#39;: 0.9080459770114943,
+ &#39;Raza Longknife&#39;: 0.8783068783068783,
+ &#39;Spider-woman / Jessica&#39;: 0.8528735632183908,
+ &#39;Cypher / Doug Ramsey&#39;: 0.7182926829268292,
+ &#34;Deathbird [shi&#39;ar]&#34;: 0.7857142857142857,
+ &#39;Hudson, Heather&#39;: 0.7603131586871424,
+ &#39;Stryfe&#39;: 0.9233511586452763,
+ &#39;Iron Man Doppelgange&#39;: 0.996135265700483,
+ &#39;Puck / Eugene Milton J&#39;: 0.7617656604998377,
+ &#39;Silhouette&#39;: 0.8722689075630252,
+ &#39;Cortez, Fabian&#39;: 0.9,
+ &#39;Black King / Sebastian&#39;: 0.864516129032258,
+ &#39;Magik / Illyana Rasput&#39;: 0.7378048780487805,
+ &#39;Zabu&#39;: 0.7633333333333333,
+ &#39;Domino Iii / Beatrice / &#39;: 0.8297101449275363,
+ &#39;Caliban / &#39;: 0.7402439024390244,
+ &#39;Apocalypse / En Sabah&#39;: 0.6772727272727272,
+ &#39;Hunter, Stevie&#39;: 0.8364153627311522,
+ &#39;Corsair&#39;: 0.8168067226890756,
+ &#34;Ch&#39;od&#34;: 0.8666666666666667,
+ &#34;Mam&#39;selle Hepzibah&#34;: 0.8689655172413793,
+ &#39;Zero&#39;: 0.9268817204301075,
+ &#39;X-man / Nathan Grey&#39;: 0.8666666666666667,
+ &#34;Karma / Xi&#39;an Coy Manh&#34;: 0.8152709359605911,
+ &#39;Mr. Fantastic Doppel&#39;: 0.9804421768707483,
+ &#39;Beyonder&#39;: 0.765079365079365,
+ &#39;Multiple Man / James A&#39;: 0.7045614035087719,
+ &#39;Colossus Ii Doppelga&#39;: 1.0,
+ &#39;Scanner Ii&#39;: 0.8128654970760234,
+ &#39;Ka-zar / Kevin Plunder&#39;: 0.7916666666666666,
+ &#39;White Queen / Emma Fro&#39;: 0.658974358974359,
+ &#39;Magma / Amara Aquilla / &#39;: 0.8809523809523809,
+ &#39;Thanos Doppelganger&#39;: 0.9224043715846995,
+ &#39;Magus&#39;: 0.8798904538341158,
+ &#39;Knight, Misty&#39;: 0.7378917378917379,
+ &#39;Wing, Colleen&#39;: 0.803030303030303,
+ &#39;Puppet Master / Philli&#39;: 0.91,
+ &#39;Maximus [inhuman]&#39;: 0.9736842105263158,
+ &#39;Punisher Ii / Frank Ca&#39;: 0.47368421052631576,
+ &#39;Zeus&#39;: 0.7862318840579711,
+ &#39;Box Iv / Madison Jeffr&#39;: 0.8210526315789474,
+ &#39;Thena&#39;: 0.6883116883116883,
+ &#39;Black Cat / Felicia Ha&#39;: 0.6650246305418719,
+ &#39;Gee / Alex Power&#39;: 0.5324675324675324,
+ &#39;Spider-man Clone / Ben&#39;: 0.6491228070175439,
+ &#39;Ulik&#39;: 0.7485380116959064,
+ &#39;Citizen V Ii / Helmut&#39;: 0.6129032258064516,
+ &#39;High Evolutionary / He&#39;: 0.5353658536585366,
+ &#39;Hobgoblin V / Jason Ph&#39;: 0.6553846153846153,
+ &#39;Ghost Rider Iii / Dan&#39;: 0.6491228070175439,
+ &#39;Cushing, Kate&#39;: 0.8853754940711462,
+ &#39;Katzenberg, Nick&#39;: 0.9157894736842105,
+ &#39;Vizier&#39;: 0.8221343873517787,
+ &#39;Tombstone / Lonnie Tho&#39;: 0.7333333333333333,
+ &#39;Mercado, Joy&#39;: 0.9095238095238095,
+ &#39;Hammerhead&#39;: 0.8070175438596491,
+ &#39;Arranger / &#39;: 0.8947368421052632,
+ &#39;Osborn, Harry&#39;: 0.7698412698412699,
+ &#39;Cobra / Klaus Vorhees&#39;: 0.5333333333333333,
+ &#39;Leeds, Ned&#39;: 0.8260869565217391,
+ &#39;Watson, Anna&#39;: 0.7661538461538462,
+ &#39;Urich, Ben&#39;: 0.6471471471471472,
+ &#39;Robertson, Randy&#39;: 0.8614718614718615,
+ &#39;Page, Karen&#39;: 0.8083333333333333,
+ &#39;Grant, Gloria Glory&#39;: 0.7804232804232805,
+ &#39;Lubenski, Nate&#39;: 0.9473684210526315,
+ &#39;Ikaris / Ike Harris [e&#39;: 0.8382352941176471,
+ &#39;Rosenthal, Bernie&#39;: 0.6333333333333333,
+ &#39;Gladiator Ii&#39;: 0.8458498023715415,
+ &#39;Beta Ray Bill&#39;: 0.6811594202898551,
+ &#39;Bridge, George Washi&#39;: 0.39826839826839827,
+ &#39;Diamond Lil / Lillian&#39;: 0.8901098901098901,
+ &#39;Asp Ii / Cleo&#39;: 0.9642857142857143,
+ &#39;Black Mamba / Tanya Se&#39;: 0.9642857142857143,
+ &#39;Meggan&#39;: 0.8904761904761904,
+ &#39;Austin, Susan&#39;: 0.8970588235294118,
+ &#39;Diamondback Ii / Rache&#39;: 0.631578947368421,
+ &#39;Makkari / Mike Khary / I&#39;: 0.6,
+ &#39;Hodge, Cameron&#39;: 0.8575498575498576,
+ &#39;Skin / Angelo Espinosa&#39;: 0.7912087912087912,
+ &#39;Husk / Paige Guthrie&#39;: 0.775,
+ &#39;Deadpool / Jack / Wade W&#39;: 0.782051282051282}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the average clustering coefficient</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">average_clustering</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0.7047201786696375</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Bridges">Bridges<a class="anchor-link" href="#Bridges">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># List a network&#39;s bridges</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">bridges</span><span class="p">(</span><span class="n">marvel</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test if a network has any bridges</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">has_bridges</span><span class="p">(</span><span class="n">marvel</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># List a network&#39;s local bridges</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">local_bridges</span><span class="p">(</span><span class="n">marvel</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[(&#39;Death&#39;, &#39;Deadpool / Jack / Wade W&#39;, 3)]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Neigbors">Neigbors<a class="anchor-link" href="#Neigbors">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find a nodes neighbors</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">neighbors</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s1">&#39;Death&#39;</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#34;Black Panther / T&#39;chal&#34;,
+ &#39;Iron Man / Tony Stark&#39;,
+ &#39;Sub-mariner / Namor Ma&#39;,
+ &#39;Nova / Richard Rider&#39;,
+ &#39;Hulk / Dr. Robert Bruce Banner&#39;,
+ &#39;Spider-man / Peter Parker&#39;,
+ &#39;Wasp / Janet Van Dyne&#39;,
+ &#39;Galactus / Galan&#39;,
+ &#39;Silver Surfer / Norrin&#39;,
+ &#39;Hawk&#39;,
+ &#39;Scarlet Witch / Wanda&#39;,
+ &#39;Uatu&#39;,
+ &#39;Captain America&#39;,
+ &#39;Thunderstrike / Eric K&#39;,
+ &#39;Wonder Man / Simon Wil&#39;,
+ &#39;Wolverine / Logan&#39;,
+ &#39;She-hulk / Jennifer Wa&#39;,
+ &#39;Vision&#39;,
+ &#39;Storm / Ororo Munroe S&#39;,
+ &#39;Eternity / Adam Qadmon&#39;,
+ &#39;Quasar Iii / Wendell V&#39;,
+ &#39;Black Widow / Natasha&#39;,
+ &#39;Firelord / Pyreus Kril&#39;,
+ &#39;Thor / Dr. Donald Blak&#39;,
+ &#39;Richards, Franklin B&#39;,
+ &#39;Deadpool / Jack / Wade W&#39;,
+ &#39;Mephisto&#39;,
+ &#39;Dr. Doom / Victor Von&#39;,
+ &#39;Thing / Benjamin J. Gr&#39;,
+ &#39;Gamora&#39;,
+ &#39;Drax / Arthur Douglas&#39;,
+ &#39;Nova Ii / Frankie Raye&#39;,
+ &#39;Ant-man / Dr. Henry J.&#39;,
+ &#39;Moondragon / Heather D&#39;,
+ &#39;Pip / Prince Gofern&#39;,
+ &#39;Thanos&#39;,
+ &#39;Collector / Taneleer T&#39;,
+ &#39;Captain Marvel / Capta&#39;,
+ &#39;Warlock Ii / Adam Warl&#39;,
+ &#39;Dr. Strange / Stephen&#39;,
+ &#39;Starfox / Eros&#39;,
+ &#39;Invisible Woman / Sue&#39;,
+ &#39;Cyclops / Scott Summer&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find common neighbors of a node pair</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">common_neighbors</span><span class="p">(</span><span class="n">marvel</span><span class="p">,</span> <span class="s1">&#39;Death&#39;</span><span class="p">,</span> <span class="s1">&#39;Zeus&#39;</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#39;Sub-mariner / Namor Ma&#39;,
+ &#39;Wasp / Janet Van Dyne&#39;,
+ &#39;Hawk&#39;,
+ &#39;Scarlet Witch / Wanda&#39;,
+ &#39;Captain America&#39;,
+ &#39;She-hulk / Jennifer Wa&#39;,
+ &#39;Vision&#39;,
+ &#39;Black Widow / Natasha&#39;,
+ &#39;Thor / Dr. Donald Blak&#39;,
+ &#39;Ant-man / Dr. Henry J.&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 </body>
 
