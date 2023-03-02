@@ -9,6 +9,8 @@ main:
     url: /policies/
   - title: "Resources"
     url: /resources/
+  - title: "Textbook"
+    url: https://jrladd.com/networks
   - title: "Ground Rules"
     url: /groundrules/
     #  - title: "Slides"
