@@ -109,8 +109,8 @@ This semester we will address topics which may be emotionally difficult. I ackno
 
 Letter Grade|Point Total
 ---|---
-A|95-100
-A-|90-94
+A|93-100
+A-|90-92
 B+|87-89
 B|83-86
 B-|80-82
