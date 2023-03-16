@@ -11,7 +11,7 @@ sidebar:
 
 ## Books and Materials
 
-Easley, David and John Kleiberg. [*Networks, Crowds, and Markets: Reasoning About a Highly Connected World*](https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf). Cambridge UP, 2010. (NCM)
+Easley, David and John Kleinberg. [*Networks, Crowds, and Markets: Reasoning About a Highly Connected World*](https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf). Cambridge UP, 2010. (NCM)
 
 Ahnert, Ruth, et al. [*The Network Turn: Changing Perspectives in the Humanities*](https://doi.org/10.1017/9781108866804). Cambridge UP, 2020. (NT)
 
