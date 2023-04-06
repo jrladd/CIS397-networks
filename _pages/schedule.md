@@ -30,8 +30,8 @@ Date|Topics & Slides|Readings|Assignments
 21 & 23 Mar.|NO CLASS: Spring Break
 28 & 30 Mar.|Work on Project 1
 4 & 6 Apr.|Special Networks: Multipartite, Dynamic & Multilayer Networks||Project 1 Due Tuesday at 12:50pm
-11 & 13 Apr.|Behavior: Information Cascades & Network Effects|NCM Ch. 16 & 17
-18 & 20 Apr.|Behavior: Diffusion & Epidemics|NCM Ch. 19 & 21
+11 & 13 Apr.|Behavior: Cascades|NCM Ch. 19
+18 & 20 Apr.|Behavior: Epidemics|NCM Ch. 21
 25 & 27 Apr.|Behavior: Search Algorithms & Citation Analysis|NCM Ch. 14
 2 & 4 May|Behavior: Modeling with Networks|NCM Ch. 18
 9 May|Work on Project 2 & Wrap-Up|
