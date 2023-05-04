@@ -35,12 +35,14 @@ You will be assessed on the content of this video and how well it addresses the 
 
 ## Responding to Videos
 
+**If you will present for our Finals session on May 12, you do not have to complete the written responses, but you might use the information below as a guide to preparing for the panel discussion. If you will *not* be present on the 12th becuase of an unavoidable event, you must complete the written responses and post them to the Teams channel as  described below. These must be complete by *5pm on Friday May 12***.
+
 In addition to making a video presentation, you will watch and respond to the videos made by your peers. Before the final exam session, you will watch the videos on the schedule for that day (see Sakai for the [presentation schedule]()). After watching a video, you will write down the following for each one.
 
 1. One substantive similarity between the presenter's project and your own.
 2. One question you have about the project.
 3. One idea or suggestion you have for the presenter as they finish their project.
 
-Bring these similarities, questions, and suggestions with you to class, and we will use them as the basis to discuss all the projects. **When class is over, you can post your three items as a comment underneath your classmate's video on Teams.** *I'll read over each response and will include this as part of your presentation grade.*
+**You can post your three items as a comment underneath your classmate's video on Teams.** *I'll read over each response and will include this as part of your presentation grade.*
 
 **Remember**: the best comments are ones that are substantive and move the conversation forward. So not just "We are both working on golf data," but "In my project, I found that one challenge with golf data was that it had mostly quantitative variables. You're dealing with a similar challenge." And not just "What do you plan to do next?" but "When you model your data with a random forest classifier, do you plan to limit the size of your decision trees?" These comments can be genuinely helpful feedback for your classmates, so give the feedback that you would like to receive!
