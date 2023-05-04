@@ -34,5 +34,5 @@ Date|Topics & Slides|Readings|Assignments
 18 & 20 Apr.|Behavior: Epidemics|NCM Ch. 21
 25 & 27 Apr.|Behavior: Search Algorithms & Citation Analysis|NCM Ch. 14
 2 & 4 May|Behavior: Modeling with Networks|
-9 May|Work on Project 2 & Wrap-Up|Video Presentations Due
+9 May|Work on Project 2 & Wrap-Up||[Video Presentations](https://jrladd.com/CIS397-networks/assignments/presentation/) Due
 12 May 2-5pm|Panel Presentations||Project 2 Due at 2pm
